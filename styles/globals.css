@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-page: #363636;
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+  --accent: #bde51b;
+}
+
+body {
+  @apply bg-charles-dark text-white font-body leading-relaxed;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding-top: 80px;
+}
+
+a {
+  @apply text-charles-lime hover:text-charles-limeHover transition-colors;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading font-semibold text-white;
+  letter-spacing: -1px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #bde51b;
+  margin: 30px auto;
+  padding: 0;
+  width: 125px;
+}
+
+.btn-lime {
+  @apply bg-charles-lime text-charles-dark px-6 py-3 text-sm font-heading font-bold uppercase tracking-wider hover:bg-charles-limeHover transition-all;
+}
+
+/* Hero zoom animation */
+@keyframes heroZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+.hero-zoom {
+  animation: heroZoom 20s ease-out forwards;
+}
+
+/* Testimonial carousel fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.testimonial-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Service page image parallax */
+.service-hero-img {
+  transition: transform 0.3s ease-out;
+}
+
+/* Hero Carousel */
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-slide .hero-zoom-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform 6s linear;
+}
+
+.hero-slide.active .hero-zoom-bg {
+  transform: scale(1.08);
+}
+
+
+/* Custom scrollbar matching dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #363636;
+  border: 1px solid #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bde51b;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}
