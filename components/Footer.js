@@ -51,7 +51,7 @@ export default function Footer() {
             <h3 className="font-heading text-lg font-bold mb-4 text-white">Contact Us</h3>
             <div className="flex flex-col gap-3 font-body text-gray-400 text-sm">
               <p>Bwaise, Bombo Road<br />Kampala, Uganda</p>
-              <a href="mailto:ivansmbt@gmail.com" className="hover:text-charles-lime transition-colors">ivansmbt@gmail.com</a>
+              <a href="mailto:info@pathway-printing.net" className="hover:text-charles-lime transition-colors">info@pathway-printing.net</a>
               <a href="tel:+256782807255" className="hover:text-charles-lime transition-colors">+256 782 807 255</a>
               <div className="pt-2 border-t border-gray-700/50">
                 <p className="text-xs text-gray-500 mb-1">Business Hours</p>

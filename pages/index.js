@@ -455,13 +455,13 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative aspect-square max-w-md mx-auto lg:mx-0 overflow-hidden rounded-2xl grayscale hover:grayscale-0 transition-all duration-700"
+              className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0 overflow-hidden rounded-2xl grayscale hover:grayscale-0 transition-all duration-700"
             >
               <Image
                 src="/images/founder.png"
                 alt="Ivan Sembatya - Founder of Pathway Printing & Graphics"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </motion.div>
             <motion.div

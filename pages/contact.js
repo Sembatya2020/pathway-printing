@@ -141,7 +141,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Email</p>
-                  <a href="mailto:ivansmbt@gmail.com" className="text-white hover:text-charles-lime transition-colors text-lg font-bold">ivansmbt@gmail.com</a>
+                  <a href="mailto:info@pathway-printing.net" className="text-white hover:text-charles-lime transition-colors text-lg font-bold">info@pathway-printing.net</a>
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">WhatsApp</p>

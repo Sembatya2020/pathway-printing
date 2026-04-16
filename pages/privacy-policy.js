@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
                 <p>
                   If you have any questions about this Privacy Policy, please contact us at:
                   <br />
-                  Email: ivansmbt@gmail.com
+                  Email: info@pathway-printing.net
                   <br />
                   Phone: +256 782 807 255
                 </p>
