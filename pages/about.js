@@ -33,13 +33,13 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6 md:px-10 relative z-10 w-full">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="flex flex-col items-center">
             <motion.h1 variants={fadeInUp} className="text-4xl md:text-7xl font-heading font-bold text-white leading-tight">
-              From Web Design<br />to Branding.
-              <span className="text-charles-lime block mt-2">We have it covered.</span>
+              From Design & Print<br />to Music.
+              <span className="text-charles-lime block mt-2">I have it covered.</span>
             </motion.h1>
             <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime my-8 mx-auto" />
             <motion.p variants={fadeInUp} className="text-xl md:text-2xl font-body text-gray-200 max-w-3xl leading-relaxed mx-auto">
-              We are a creative studio based in Kampala delivering complete design and print services.
-              Our focus is on clean strategy, premium production, and measurable results for your business.
+              I am a creative professional based in Kampala, delivering design, print, and music services.
+              My focus is on clear communication, quality work, and helping you bring your ideas to life.
             </motion.p>
           </motion.div>
         </div>
@@ -65,16 +65,16 @@ export default function About() {
               />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Our Story</motion.h2>
+              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">My Story</motion.h2>
               <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8" />
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed mb-6">
-                Based in Bwaise along Bombo Road, Kampala, Pathway Printing &amp; Graphics was built on a passion for creative design, quality printing, and meaningful brand communication.
+                I am based in Kampala, Uganda, and Pathway Printing &amp; Graphics was built from my passion for creative design, quality printing, and music communication.
               </motion.p>
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed mb-6">
-                We work closely with businesses, organizations, and individuals to create design and print solutions that are clear, effective, and tailored to their goals. From concept to final delivery, we focus on understanding your message and turning it into visuals that connect with the right audience.
+                I have worked with organizations such as Processwork Institute of Hawaii, International Peace Group, Magarini Children's Center, and The Whirling Rainbow Foundation, along with several local NGOs. Through these experiences, I have delivered work based on each client's unique needs.
               </motion.p>
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed">
-                At Pathway, we believe every client deserves thoughtful service, strong creative direction, and quality results. That is why we do not rely on one-size-fits-all materials. We create custom solutions that help our clients stand out, communicate clearly, and grow with confidence.
+                I am always open to new opportunities and would be glad to work with you and serve you professionally.
               </motion.p>
             </motion.div>
           </div>
@@ -86,16 +86,16 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <div className="grid gap-16 lg:grid-cols-2 items-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="order-2 lg:order-1">
-              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Our Approach</motion.h2>
+              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">My Approach</motion.h2>
               <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8" />
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed mb-6">
-                At Pathway Printing &amp; Graphics, we believe strong design should do more than look good. It should communicate clearly, represent your brand with confidence, and leave a lasting impression.
+                I believe strong design should do more than just look good. It should communicate clearly, represent your message with confidence, and leave a lasting impression.
               </motion.p>
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed mb-6">
-                That is why we combine creative thinking, quality production, and close attention to detail to deliver work that is both visually strong and practically effective.
+                That is why I combine creative thinking, attention to detail, and practical design to deliver work that is both visually strong and effective.
               </motion.p>
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed">
-                From print and branding to digital design, our goal is to create solutions that help our clients stand out, connect with the right audience, and communicate with impact.
+                From print to digital design, my goal is to help you stand out, connect with your audience, and communicate your message clearly.
               </motion.p>
             </motion.div>
             <motion.div
@@ -121,7 +121,7 @@ export default function About() {
       <section className="bg-charles-dark py-24">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-16">
-            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-charles-lime mb-6">How We Work</motion.h2>
+            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-charles-lime mb-6">How I Work</motion.h2>
             <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mx-auto" />
           </motion.div>
 
@@ -133,11 +133,11 @@ export default function About() {
             className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
           >
             {[
-              { step: '01', title: 'Listen', text: 'Your requirements are as unique as your business. We start by understanding your goals deeply.' },
-              { step: '02', title: 'Explore', text: 'We research your market and seek the best creative approach for your project.' },
-              { step: '03', title: 'Define', text: 'We develop strategies and tools that position your brand for maximum impact.' },
-              { step: '04', title: 'Create', text: 'Our creative team brings ideas to life with polished designs that make an impression.' },
-              { step: '05', title: 'Deliver', text: 'From concept to completion — excellent, on-time delivery every single time.' },
+              { step: '01', title: 'Listen', text: 'Your needs are unique. I start by understanding your goals and what you want to communicate.' },
+              { step: '02', title: 'Explore', text: 'I research your audience and find the best creative approach for your project.' },
+              { step: '03', title: 'Define', text: 'I develop a clear plan and direction that positions your message for maximum impact.' },
+              { step: '04', title: 'Create', text: 'I bring your ideas to life with polished designs that are clear and effective.' },
+              { step: '05', title: 'Deliver', text: 'From concept to completion — quality, on-time delivery every single time.' },
             ].map((item) => (
               <motion.div
                 key={item.step}
@@ -161,7 +161,7 @@ export default function About() {
               Ready to Get Started?
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-xl font-body text-charles-darker mb-10 max-w-2xl mx-auto">
-              Talk to us about your next print and digital project today.
+              Talk to me about your next print, design, or creative project today.
             </motion.p>
             <motion.div variants={fadeInUp}>
               <Link href="/contact" className="px-8 py-4 bg-charles-dark text-white font-heading font-bold uppercase tracking-wider hover:bg-charles-darker transition-colors inline-block">

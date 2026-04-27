@@ -11,7 +11,7 @@ export default function Layout({ children, title, description }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen bg-charles-dark text-white">
+      <div className="min-h-screen bg-charles-dark text-white overflow-x-hidden flex flex-col">
         <Header />
         <main>{children}</main>
         <Footer />

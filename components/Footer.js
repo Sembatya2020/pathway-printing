@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="font-heading text-2xl font-bold mb-4 text-white">Pathway Printing<br />& Graphics</h3>
             <p className="font-body text-gray-400 leading-relaxed text-sm mb-6">
-              Kampala's trusted experts in web design, branding, graphic design and creative print solutions.
+              Creative design and printing services based in Kampala, Uganda — working with clients both locally and online.
             </p>
             <div className="flex gap-3">
               <a href="https://www.facebook.com/profile.php?id=61588577943873" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center border border-gray-600 text-gray-400 hover:bg-charles-lime hover:text-charles-dark hover:border-charles-lime transition-all">
@@ -50,7 +50,7 @@ export default function Footer() {
           <div>
             <h3 className="font-heading text-lg font-bold mb-4 text-white">Contact Us</h3>
             <div className="flex flex-col gap-3 font-body text-gray-400 text-sm">
-              <p>Bwaise, Bombo Road<br />Kampala, Uganda</p>
+              <p>Kampala, Uganda<br />Available for both local and online projects</p>
               <a href="mailto:info@pathway-printing.net" className="hover:text-charles-lime transition-colors">info@pathway-printing.net</a>
               <a href="tel:+256782807255" className="hover:text-charles-lime transition-colors">+256 782 807 255</a>
               <div className="pt-2 border-t border-gray-700/50">

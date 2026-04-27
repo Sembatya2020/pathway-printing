@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 const servicesDropdown = [
   { label: 'Web Design', slug: 'web-design' },
   { label: 'Graphic Design', slug: 'graphic-design' },
-  { label: 'Branding', slug: 'branding' },
+  { label: 'Music', slug: 'music', isPage: true },
   { label: 'Creative', slug: 'creative' },
   { label: 'Printing', slug: 'printing' },
 ];
@@ -24,13 +24,13 @@ export default function Header() {
   return (
     <header className={`fixed top-0 left-0 w-full z-50 h-[80px] transition-all duration-300 ${scrolled ? 'bg-charles-darker/95 backdrop-blur-md shadow-lg' : 'bg-charles-darker'}`}>
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 md:px-10">
-        <Link href="/" className="relative h-[65px] md:h-[80px] w-[260px] md:w-[340px] transition-transform hover:opacity-80 flex items-center">
+        <Link href="/" className="relative h-[50px] md:h-[80px] w-[180px] md:w-[340px] transition-transform hover:opacity-80 flex items-center">
           <Image
             src="/images/Finished designs/Logo.png"
             alt="Pathway Printing & Graphics"
             fill
             unoptimized
-            className="object-contain object-left scale-[1.8] md:scale-[2.15] origin-left saturate-[0.85] opacity-95 transition-all"
+            className="object-contain object-left scale-[1.8] md:scale-[2.15] origin-left saturate-[0.85] opacity-95 transition-all pointer-events-none"
             priority
           />
         </Link>
@@ -54,7 +54,7 @@ export default function Header() {
                 {servicesDropdown.map((item) => (
                   <Link
                     key={item.slug}
-                    href={`/services/${item.slug}`}
+                    href={item.isPage ? `/${item.slug}` : `/services/${item.slug}`}
                     className="text-[15px] font-body text-gray-300 hover:text-charles-dark hover:bg-charles-lime block px-6 py-3 transition-all duration-200"
                     onClick={() => setOpen(false)}
                   >
@@ -106,7 +106,7 @@ export default function Header() {
               {servicesDropdown.map((item) => (
                 <Link
                   key={item.slug}
-                  href={`/services/${item.slug}`}
+                  href={item.isPage ? `/${item.slug}` : `/services/${item.slug}`}
                   onClick={() => setMobileOpen(false)}
                   className="text-gray-300 text-base hover:text-charles-lime py-2 font-body transition-colors"
                 >

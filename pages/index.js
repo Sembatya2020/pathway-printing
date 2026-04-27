@@ -8,35 +8,35 @@ const services = [
   {
     title: 'Web Design',
     slug: 'web-design',
-    description: 'Responsive websites that convert visitors into loyal customers.',
+    description: 'Responsive websites built to engage your audience and communicate your message clearly.',
     image: '/images/Finished designs/webdesign.jpg',
     icon: '💻'
   },
   {
     title: 'Graphic Design',
     slug: 'graphic-design',
-    description: 'Print and digital design that makes your brand unforgettable.',
+    description: 'Flyers, posters, social media designs, and print materials that are clear and visually strong.',
     image: '/images/Finished designs/graphic.jpg',
     icon: '🎨'
   },
   {
-    title: 'Branding',
-    slug: 'branding',
-    description: 'Complete identity systems that build recognition and trust.',
-    image: '/images/Finished designs/brandingx.jpg',
-    icon: '🏷️'
+    title: 'Music',
+    slug: 'music',
+    description: 'Songwriting, collaboration, and custom music for events and creative projects.',
+    image: '/images/Finished designs/music.jpg',
+    icon: '🎵'
   },
   {
     title: 'Creative',
     slug: 'creative',
-    description: 'Innovative concepts and visual storytelling for every project.',
+    description: 'Creative direction, visual storytelling, and content that brings your ideas to life.',
     image: '/images/Finished designs/creative.jpg',
     icon: '✨'
   },
   {
     title: 'Printing',
     slug: 'printing',
-    description: 'Premium offset and digital printing with fast turnaround.',
+    description: 'Quality offset and digital printing with reliable turnaround times.',
     image: '/images/Finished designs/printingx.jpg',
     icon: '🖨️'
   }
@@ -126,33 +126,33 @@ export default function Home() {
 
   const heroSlides = [
     {
-      title: "Digital Excellence",
+      title: "Design · Print · Music",
       headline: "Pathway Printing &<br /><span class=\"text-charles-lime\">Graphics</span>",
-      description: "Kampala's trusted experts in web design, branding, graphic design and creative print solutions for church, school, and business.",
+      description: "Helping you bring your ideas to life through creative design, print, and music.",
       image: "/images/Finished designs/digital.jpg"
     },
     {
-      title: "Our Vision",
+      title: "Quality You Can Trust",
       headline: "Quality You Can<br /><span class=\"text-charles-lime\">See & Feel</span>",
-      description: "From business cards to large format banners, we deliver exceptional print quality with fast turnaround times.",
+      description: "From flyers to banners, I deliver quality print work with reliable turnaround — every time.",
       image: "/images/Finished designs/vision.jpg"
     },
     {
-      title: "Brand Identity Systems",
-      headline: "Building Brands<br />That <span class=\"text-charles-lime\">Stand Out</span>",
-      description: "We create cohesive visual identities that give your organization credibility and a professional edge.",
+      title: "Creative Design Solutions",
+      headline: "Designs That<br /><span class=\"text-charles-lime\">Communicate</span>",
+      description: "I create clean, effective designs that help your message stand out and connect with the right audience.",
       image: "/images/Finished designs/printing.jpg"
     },
     {
-      title: "Creative Web Design",
-      headline: "Digital Experiences<br />That <span class=\"text-charles-lime\">Convert</span>",
-      description: "Responsive, modern websites built to engage your audience and drive measurable results.",
+      title: "Web Design That Works",
+      headline: "Digital Experiences<br />That <span class=\"text-charles-lime\">Engage</span>",
+      description: "Responsive, modern websites built to represent your brand and communicate clearly online.",
       image: "/images/Finished designs/quality.jpg"
     },
     {
-      title: "Creative Storytelling",
-      headline: "Ideas That<br /><span class=\"text-charles-lime\">Captivate</span>",
-      description: "Bringing your creative concepts to life with stunning visuals and professional execution.",
+      title: "Music & Creative Projects",
+      headline: "Ideas That<br /><span class=\"text-charles-lime\">Inspire</span>",
+      description: "Songwriting, collaboration, and creative projects that express hope and tell meaningful stories.",
       image: "/images/Finished designs/project-cover.jpg"
     }
   ];
@@ -272,10 +272,10 @@ export default function Home() {
             variants={staggerContainer}
             className="text-center mb-20"
           >
-            <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">What We Do</motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Our Expertise</motion.h2>
+            <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">What I Do</motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">My Services</motion.h2>
             <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mx-auto mb-6"></motion.div>
-            <motion.p variants={fadeInUp} className="text-lg md:text-xl font-body text-gray-400 max-w-3xl mx-auto">Comprehensive design and print solutions that make your brand stand out in every medium.</motion.p>
+            <motion.p variants={fadeInUp} className="text-lg md:text-xl font-body text-gray-400 max-w-3xl mx-auto">Creative design, print, and music solutions to help you communicate your message clearly and effectively.</motion.p>
           </motion.div>
 
           <motion.div 
@@ -290,7 +290,7 @@ export default function Home() {
                 key={service.title}
                 variants={fadeInUp}
               >
-                <Link href={`/services/${service.slug}`} className="group block relative overflow-hidden bg-charles-darker transition-all duration-500 hover:-translate-y-2">
+                <Link href={service.slug === 'music' ? '/music' : `/services/${service.slug}`} className="group block relative overflow-hidden bg-charles-darker transition-all duration-500 hover:-translate-y-2">
                   <div className="relative h-56 overflow-hidden">
                     <Image
                       src={service.image}
@@ -326,18 +326,18 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <div className="grid gap-16 lg:grid-cols-2 items-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-              <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">Why Choose Us</motion.p>
+              <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">Why Choose Me</motion.p>
               <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Why Choose Pathway</motion.h2>
               <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8"></motion.div>
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed mb-10 max-w-xl">
-                We provide creative, reliable, and affordable printing and graphic design services for businesses, schools, churches, and individuals. Alongside serving local clients in Uganda, we have also supported online clients, including flyer design work for clients in the United States.
+                I provide creative, reliable, and affordable printing and graphic design services for businesses, schools, churches, and individuals. While I serve clients locally in Uganda, I have also worked with online clients, including flyer design projects for clients in the United States. I focus on understanding your needs and delivering work that is simple, clear, and effective.
               </motion.p>
 
               <motion.ul variants={staggerContainer} className="space-y-6">
                 {[
-                  { title: 'Personalized Service', desc: 'We work closely with each client to understand their needs and deliver the right solution.' },
-                  { title: 'Professional Design Quality', desc: 'We focus on clean, effective, and visually strong designs that communicate clearly.' },
-                  { title: 'Fast & Reliable Turnaround', desc: 'We value your time and work hard to deliver on schedule.' },
+                  { title: 'Personalized Service', desc: 'I work closely with each client to understand their needs and deliver the right solution.' },
+                  { title: 'Professional Design Quality', desc: 'I focus on clean, effective, and visually strong designs that communicate clearly.' },
+                  { title: 'Fast & Reliable Turnaround', desc: 'I value your time and work hard to deliver on schedule.' },
                   { title: 'Affordable Pricing', desc: 'Professional design and printing services at prices that fit your budget.' },
                 ].map((item, i) => (
                   <motion.li key={i} variants={fadeInUp} className="flex gap-4 items-start group">
@@ -368,7 +368,7 @@ export default function Home() {
                 <div className="text-6xl mb-6">🏆</div>
                 <h3 className="text-2xl md:text-3xl font-heading font-bold text-charles-lime mb-6">Serving Businesses, Schools, and Churches in Kampala</h3>
                 <p className="font-body text-gray-400 mb-10 leading-relaxed text-lg">
-                  We provide creative, reliable, and professional design and printing services for businesses, schools, churches, and organizations.
+                  I provide creative, reliable, and professional design, printing, and music services for businesses, schools, churches, and organizations — both locally and online.
                 </p>
                 <div className="grid grid-cols-3 gap-6 border-t border-gray-700 pt-8">
                   <div>
@@ -403,7 +403,7 @@ export default function Home() {
             <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">Portfolio</motion.p>
             <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Recent Work</motion.h2>
             <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mx-auto mb-6"></motion.div>
-            <motion.p variants={fadeInUp} className="text-lg md:text-xl font-body text-gray-400 max-w-3xl mx-auto">Showcasing our latest creative solutions and high-quality prints.</motion.p>
+            <motion.p variants={fadeInUp} className="text-lg md:text-xl font-body text-gray-400 max-w-3xl mx-auto">A selection of my recent design, print, and creative projects for clients locally and online.</motion.p>
           </motion.div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -470,15 +470,18 @@ export default function Home() {
               viewport={{ once: true }}
               variants={staggerContainer}
             >
-              <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">The Visionary</motion.p>
+              <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">About Me</motion.p>
               <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">About the Founder</motion.h2>
               <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8"></motion.div>
               <motion.div variants={fadeInUp} className="space-y-6 text-lg font-body text-gray-300 leading-relaxed">
                 <p>
-                  My name is <span className="text-white font-bold">Ivan Sembatya</span>, founder of Pathway Printing & Graphics. I am a graphic designer and creative professional based in Uganda, focused on helping businesses, organizations, and individuals communicate clearly through quality design and printing.
+                  My name is <span className="text-white font-bold">Ivan Sembatya</span>, founder of Pathway Printing & Graphics. I am a graphic designer and creative professional based in Uganda. I hold a Bachelor's degree in Software Development from BYU and I am currently continuing my studies in Process Work.
                 </p>
                 <p>
-                  I am building this business with a strong commitment to professionalism, creativity, and reliable service. My goal is to provide affordable and high-quality design and printing solutions that help clients bring their ideas to life.
+                  I work with individuals, businesses, organizations, and charities to create websites, graphics, and creative content that communicate clearly and effectively. Whether you need a website for your project, designs for a special event, or music that expresses your vision, I am ready to work with you and bring your ideas to life.
+                </p>
+                <p>
+                  I am building this business with a strong commitment to professionalism, creativity, and reliability. My goal is to provide affordable, high-quality design and printing solutions while growing and improving every day in this field.
                 </p>
               </motion.div>
             </motion.div>
@@ -501,7 +504,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">Testimonials</motion.p>
-            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">What Our Clients Say</motion.h2>
+            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">What My Clients Say</motion.h2>
             <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mx-auto"></motion.div>
           </motion.div>
 
@@ -550,7 +553,7 @@ export default function Home() {
               Ready to Start Your Project?
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-xl font-body text-charles-darker mb-10 max-w-2xl mx-auto">
-              Let's create something amazing together. Get in touch for a free consultation and quote.
+              Let's work together. Get in touch for a free consultation and quote.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-6">
               <Link href="/contact" className="px-10 py-4 bg-charles-dark text-white font-heading font-bold uppercase tracking-wider hover:bg-charles-darker transition-colors hover:shadow-2xl text-lg">
