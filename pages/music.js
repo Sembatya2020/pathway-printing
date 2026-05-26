@@ -33,14 +33,14 @@ const YouTubeEmbed = ({ url, title }) => {
 export default function MusicPage() {
   return (
     <Layout 
-      title="Music & Songwriting | Pathway Graphics" 
+      title="Music & Songwriting | Nija Print & Graphics Studio" 
       description="Professional songwriting and music production for NGOs, businesses, and personal stories. Turning stories into powerful songs."
     >
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden pt-36">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/Finished designs/keyboard.jpg"
+            src="/images/Finished-designs/keyboard.jpg"
             alt="Songwriting and Music Production"
             fill
             className="object-cover"
@@ -140,7 +140,7 @@ export default function MusicPage() {
             >
               <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/Finished designs/music.jpg"
+                  src="/images/Finished-designs/music.jpg"
                   alt="Music Production"
                   fill
                   className="object-cover"
@@ -345,7 +345,7 @@ export default function MusicPage() {
       <section className="bg-charles-dark py-24 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">
           <Image
-            src="/images/Finished designs/keyboard.jpg"
+            src="/images/Finished-designs/keyboard.jpg"
             alt="Songwriting"
             fill
             className="object-cover"

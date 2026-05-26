@@ -13,11 +13,10 @@ const stagger = {
 };
 
 const services = [
-  { slug: 'web-design', title: 'Web Design', description: 'Responsive, modern websites from simple sites to e-commerce platforms that communicate your message clearly online.', image: '/images/Finished designs/webdesign.jpg', icon: '💻' },
-  { slug: 'graphic-design', title: 'Graphic Design', description: 'Flyers, posters, social media designs, and print materials that are clear, effective, and visually strong.', image: '/images/Finished designs/graphic.jpg', icon: '🎨' },
-  { slug: 'music', title: 'Music', description: 'Songwriting, collaboration, and custom music for events, creative projects, and meaningful storytelling.', image: '/images/Finished designs/music.jpg', icon: '🎵', isPage: true },
-  { slug: 'creative', title: 'Creative', description: 'Creative direction, visual storytelling, and content that brings your ideas to life with impact.', image: '/images/Finished designs/creative.jpg', icon: '✨' },
-  { slug: 'printing', title: 'Printing', description: 'Quality offset and digital printing — flyers, brochures, banners, signage — with reliable turnaround.', image: '/images/Finished designs/printingx.jpg', icon: '🖨️' },
+  { slug: 'web-design', title: 'Web Design', description: 'Responsive, modern websites from simple sites to e-commerce platforms that communicate your message clearly online.', image: '/images/Finished-designs/webdesign.jpg', icon: '💻' },
+  { slug: 'graphic-design', title: 'Graphic Design', description: 'Flyers, posters, social media designs, and print materials that are clear, effective, and visually strong.', image: '/images/Finished-designs/graphic.jpg', icon: '🎨' },
+  { slug: 'music', title: 'Music', description: 'Songwriting, collaboration, and custom music for events, creative projects, and meaningful storytelling.', image: '/images/Finished-designs/music.jpg', icon: '🎵', isPage: true },
+
 ];
 
 export default function Services() {
@@ -25,11 +24,11 @@ export default function Services() {
     <Layout title="Services" description="Explore our full range of design, print, and branding services.">
 
       {/* Hero */}
-      <section className="bg-charles-darker py-32 md:py-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
+      <section className="bg-charles-darker pt-48 pb-32 md:pt-64 md:pb-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
-            src="/images/Finished designs/digital.jpg"
-            alt="Pathway Printing & Graphics Services"
+            src="/images/Finished-designs/digital.jpg"
+            alt="Nija Print & Graphics Studio Services"
             fill
             className="object-cover object-center"
             priority
@@ -183,7 +182,7 @@ export default function Services() {
       <section className="bg-charles-darker py-28">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-16">
-            <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">The Pathway Difference</motion.p>
+            <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">The Nija Difference</motion.p>
             <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Why Work With Me</motion.h2>
             <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mx-auto" />
           </motion.div>

@@ -19,156 +19,210 @@ const projects = [
     title: 'Ivaste Website',
     category: 'Web Design',
     description: 'A responsive website designed to present the Ivaste brand with a clean layout, clear navigation, and engaging visual elements that communicate the brand\'s mission effectively.',
-    image: '/images/Finished designs/ivaste-website.png'
+    image: '/images/Finished-designs/ivaste-website.png'
   },
   {
     title: 'Magarini Children\'s Center Website',
     category: 'Web Design',
     description: 'A website designed for the Magarini Children\'s Center in Kenya, created to share the center\'s mission, connect with supporters, and provide a clear online presence for the organization.',
-    image: '/images/Finished designs/magarini-website.png'
+    image: '/images/Finished-designs/magarini-website.png'
   },
   {
     title: 'Processwork Institute Website',
     category: 'Web Design',
     description: 'A professional website designed for the Processwork Institute of Hawaii, featuring clear information architecture and an accessible design that serves both practitioners and students.',
-    image: '/images/Finished designs/processwork-website.png'
+    image: '/images/Finished-designs/processwork-website.png'
   },
   // Graphic Design
   {
     title: 'Aikido Event Poster',
     category: 'Graphic Design',
     description: 'A bold, eye-catching poster design for an Aikido martial arts event with clear typography and a dynamic layout that grabs attention.',
-    image: '/images/Finished designs/Aikido.jpeg'
+    image: '/images/Finished-designs/Aikido.jpeg'
   },
   {
     title: 'Healing History Publication',
     category: 'Graphic Design',
     description: 'Complete publication design including cover and interior layout for a book exploring health and historical narratives, with clean typography and professional finishing.',
-    image: '/images/Finished designs/Healing-History 1.jpeg'
+    image: '/images/Finished-designs/Healing-History-1.jpeg'
   },
   {
     title: 'Processwork Flyer Design',
     category: 'Graphic Design',
     description: 'A clean and informative flyer design for Processwork events, focused on clear messaging and visual impact to communicate the program details effectively.',
-    image: '/images/Finished designs/Ivanlee Designs2.jpg'
+    image: '/images/Finished-designs/Ivanlee-Designs2.jpg'
   },
   {
     title: 'Event Flyer Design',
     category: 'Graphic Design',
     description: 'A vibrant flyer designed for a community event with bold visuals and clear information hierarchy to attract and inform the audience.',
-    image: '/images/Finished designs/graphics (1).jpeg'
+    image: '/images/Finished-designs/graphics-1.jpeg'
   },
   {
     title: 'Promotional Poster',
     category: 'Graphic Design',
     description: 'A professionally designed promotional poster with eye-catching colors and clean layout to communicate the message with visual impact.',
-    image: '/images/Finished designs/graphics (1).jpg'
+    image: '/images/Finished-designs/graphics-1.jpg'
   },
   {
     title: 'Community Event Flyer',
     category: 'Graphic Design',
     description: 'A well-structured flyer designed for community outreach, focusing on clarity and visual appeal to effectively engage the target audience.',
-    image: '/images/Finished designs/graphics (2).jpeg'
+    image: '/images/Finished-designs/graphics-2.jpeg'
   },
   {
     title: 'Organization Flyer',
     category: 'Graphic Design',
     description: 'A clean and professional flyer designed for an organization, with strong typography and layout that communicates key information clearly.',
-    image: '/images/Finished designs/graphics (3).jpeg'
+    image: '/images/Finished-designs/graphics-3.jpeg'
   },
   {
     title: 'Creative Campaign Design',
     category: 'Graphic Design',
     description: 'A creative campaign design with bold visual elements and compelling messaging to drive engagement and awareness.',
-    image: '/images/Finished designs/graphics (3).jpg'
+    image: '/images/Finished-designs/graphics-3.jpg'
   },
   {
     title: 'Program Flyer Design',
     category: 'Graphic Design',
     description: 'A detailed program flyer with structured content layout and attractive color scheme designed to inform and inspire action.',
-    image: '/images/Finished designs/graphics (4).jpeg'
+    image: '/images/Finished-designs/graphics-4.jpeg'
   },
   {
     title: 'Social Media Graphic',
     category: 'Graphic Design',
     description: 'A social media graphic designed with modern aesthetics and brand consistency, optimized for online engagement and sharing.',
-    image: '/images/Finished designs/graphics (5).jpg'
+    image: '/images/Finished-designs/graphics-5.jpg'
   },
   {
     title: 'Event Announcement Design',
     category: 'Graphic Design',
     description: 'A visually striking event announcement design with professional typography and layout that captures attention instantly.',
-    image: '/images/Finished designs/graphics (6).jpg'
+    image: '/images/Finished-designs/graphics-6.jpg'
   },
   {
     title: 'Workshop Poster',
     category: 'Graphic Design',
     description: 'A workshop poster featuring clean design, strong visual hierarchy, and clear call-to-action to drive attendance.',
-    image: '/images/Finished designs/graphics (7).jpg'
+    image: '/images/Finished-designs/graphics-7.jpg'
   },
   {
     title: 'Informational Flyer',
     category: 'Graphic Design',
     description: 'An informational flyer designed with a focus on readability and visual clarity, effectively presenting key details to the audience.',
-    image: '/images/Finished designs/graphics (8).jpeg'
+    image: '/images/Finished-designs/graphics-8.jpeg'
   },
   {
     title: 'Conference Poster Design',
     category: 'Graphic Design',
     description: 'A conference poster design with professional layout, compelling visuals, and organized content structure for maximum impact.',
-    image: '/images/Finished designs/graphics (9).jpg'
+    image: '/images/Finished-designs/graphics-9.jpg'
   },
   {
     title: 'Charity Event Flyer',
     category: 'Graphic Design',
     description: 'A charity event flyer designed with warm visuals and clear messaging to inspire community support and participation.',
-    image: '/images/Finished designs/graphics 10.jpg'
-  },
-  // Printing
-  {
-    title: 'Corporate Brochure Design',
-    category: 'Printing',
-    description: 'A professional multi-page brochure showcasing services and capabilities with a clean, modern layout designed for quality print finishing.',
-    image: '/images/Expert Designs, Flexible Solutions.jpg'
+    image: '/images/Finished-designs/graphics-10.jpg'
   },
   {
-    title: 'Book Cover Design',
-    category: 'Creative',
-    description: 'A creative book cover design combining strong visual imagery with clear typographic hierarchy to attract readers and represent the content effectively.',
-    image: '/images/Book Cover Design.jpg'
+    title: 'Vector Portrait Illustration',
+    category: 'Graphic Design',
+    description: 'A hand-crafted vector portrait illustration capturing personality and warmth through bold linework and confident color blocking — ideal for personal branding and editorial use.',
+    image: '/images/Finished-designs/new%20(3).jpeg'
   },
+  {
+    title: 'Digital Vector Portrait',
+    category: 'Graphic Design',
+    description: 'A detailed digital portrait rendered in vector with rich textures, soft lighting, and a moody tone — designed for profile branding and creative campaigns.',
+    image: '/images/Finished-designs/new%20(4).jpeg'
+  },
+  {
+    title: 'Stylized Profile Illustration',
+    category: 'Graphic Design',
+    description: 'A modern, stylized vector profile combining a clean character illustration with dynamic geometric accents — built for standout social media identity.',
+    image: '/images/Finished-designs/new%20(5).jpeg'
+  },
+  {
+    title: 'Critical Mass Kampala – Countdown Flyer',
+    category: 'Graphic Design',
+    description: 'A vibrant countdown flyer for the Critical Mass Kampala Monthly Social Ride, using bright colors and layered photography to build excitement around the event.',
+    image: '/images/Finished-designs/new%20(6).jpeg'
+  },
+  {
+    title: 'Patriotic Vector Portrait',
+    category: 'Graphic Design',
+    description: 'A vector portrait overlaid with national flag tones — combining identity and pride into a single editorial-style illustration.',
+    image: '/images/Finished-designs/new%20(7).jpeg'
+  },
+  {
+    title: 'Editorial Vector Portrait',
+    category: 'Graphic Design',
+    description: 'A warm, editorial-style vector portrait with painterly highlights and a textured background — suited for magazine features and creative profiles.',
+    image: '/images/Finished-designs/new%20(8).jpeg'
+  },
+  {
+    title: 'Critical Mass Monthly Social Ride',
+    category: 'Graphic Design',
+    description: 'An event flyer for the Critical Mass Kampala Monthly Social Ride — combining route mapping, bold typography, and lifestyle photography into a single energetic poster.',
+    image: '/images/Finished-designs/new%20(9).jpeg'
+  },
+  {
+    title: 'Tokenomics Monday Social Graphic',
+    category: 'Graphic Design',
+    description: 'A modern social media graphic for a recurring crypto education series — clean dual-portrait layout, branded badge, and on-trend financial iconography.',
+    image: '/images/Finished-designs/new%20(10).jpeg'
+  },
+  {
+    title: 'Christmas Promotional Flyer',
+    category: 'Graphic Design',
+    description: 'A festive promotional flyer for a holiday "buy one, get one free" campaign — gold-on-black palette with a hand-drawn tree motif for premium seasonal appeal.',
+    image: '/images/Finished-designs/new%20(11).jpeg'
+  },
+  {
+    title: 'Eid Holidays Travel Flyer',
+    category: 'Graphic Design',
+    description: 'A vibrant travel agency flyer promoting an Eid holiday tour package — combining destination photography, decorative typography, and a clear booking call-to-action.',
+    image: '/images/Finished-designs/new%20(12).jpeg'
+  },
+  {
+    title: 'UAE Visa Service Flyer',
+    category: 'Graphic Design',
+    description: 'A bold promotional flyer for a UAE visa service — clean typography, vivid gradients, and lifestyle imagery designed to drive conversions on social media.',
+    image: '/images/Finished-designs/new%20(13).jpeg'
+  },
+
   // Music & Creative
   {
     title: 'My Bright Star',
     category: 'Music',
     description: 'A collaborative music project created with Sarah Bethany, Michael, and Suraj Holzwarth to express hope and inspiration. I contributed to the creative direction and message of the song.',
-    image: '/images/Finished designs/music.jpg',
+    image: '/images/Finished-designs/music.jpg',
     videoUrl: 'https://www.youtube.com/embed/K-F0B4ONcQg'
   },
   {
     title: 'You Can',
     category: 'Music',
     description: 'A motivational song written to inspire confidence and remind people that they can overcome challenges. This is one of my featured original compositions.',
-    image: '/images/Finished designs/music.jpg',
+    image: '/images/Finished-designs/music.jpg',
     videoUrl: 'https://www.youtube.com/embed/i4LE99WqfAc'
   },
   {
     title: 'Heart Like a Mountain',
     category: 'Music',
     description: 'A powerful song about strength and resilience, written by Suraj Holzwarth. This project showcases the emotional depth of acoustic storytelling and collaboration.',
-    image: '/images/Finished designs/music.jpg',
+    image: '/images/Finished-designs/music.jpg',
     videoUrl: 'https://www.youtube.com/embed/WBrtOHojvy4'
   },
   {
     title: 'My Bright Star – The Backstory',
     category: 'Music',
     description: 'An in-depth interview and behind-the-scenes look at the creative process and story behind "My Bright Star" — a project created with The Whirling Rainbow Foundation.',
-    image: '/images/Finished designs/music.jpg',
+    image: '/images/Finished-designs/music.jpg',
     videoUrl: 'https://www.youtube.com/embed/2oPD4_iVDng'
   },
 ];
 
-const categories = ['All', 'Web Design', 'Graphic Design', 'Music', 'Creative', 'Printing'];
+const categories = ['All', 'Web Design', 'Graphic Design', 'Music'];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -195,7 +249,7 @@ export default function Projects() {
       <section className="bg-charles-darker py-32 md:py-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
-            src="/images/Finished designs/project-cover.jpg"
+            src="/images/Finished-designs/project-cover.jpg"
             alt="Projects Cover"
             fill
             className="object-cover object-center"

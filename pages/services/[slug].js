@@ -17,7 +17,7 @@ const services = [
     slug: 'web-design',
     title: 'Web Design',
     icon: '💻',
-    image: '/images/Finished designs/web-cover.jpg',
+    image: '/images/Finished-designs/web-cover.jpg',
     heroText: 'Websites that work as hard as you do.',
     content: 'From brochure sites to e-commerce platforms, we craft responsive, fast-loading websites that convert visitors into customers. Every site is built with your brand at its core, designed to look stunning on every device, and optimised for search engines.',
     intro: 'Your website is often the first impression a potential client gets. We make sure it counts. Our web design service covers everything from initial concept and wireframing to design, development, and launch — with ongoing support to keep your site performing at its best.',
@@ -38,7 +38,7 @@ const services = [
     slug: 'graphic-design',
     title: 'Graphic Design',
     icon: '🎨',
-    image: '/images/Finished designs/graphic-cover.jpg',
+    image: '/images/Finished-designs/graphic-cover.jpg',
     heroText: 'Design that makes your message unmissable.',
     content: 'Our graphic design service covers everything from brochures and flyers to social media graphics and digital ads. Every piece is crafted with clear attention to your brand guidelines, target audience, and intended impact.',
     intro: 'Great graphic design does more than look good — it communicates your message clearly and drives action. Whether you need a single poster or an entire suite of marketing materials, our team produces professional-grade design work that delivers results.',
@@ -53,14 +53,14 @@ const services = [
     process: ['Creative Brief', 'Concept Development', 'Design Drafts & Revisions', 'Final Artwork Delivery', 'Print-Ready Files'],
     relatedProjects: [
       { title: 'Creative Studio Portfolio', image: '/images/Creative Graphic Designing Company in Scarborough.jpg' },
-      { title: 'Aikido Event Poster', image: '/images/Finished designs/Aikido.jpeg' },
+      { title: 'Aikido Event Poster', image: '/images/Finished-designs/Aikido.jpeg' },
     ],
   },
   {
     slug: 'branding',
     title: 'Branding',
     icon: '🏷️',
-    image: '/images/Finished designs/branding-cover.jpg',
+    image: '/images/Finished-designs/branding-cover.jpg',
     heroText: 'Build a brand that people remember.',
     content: 'Your brand is more than a logo — it is the entire experience your audience has with your business. We create complete brand identity systems that give your organisation consistency, credibility, and a professional edge in a competitive market.',
     intro: 'A strong brand builds trust, creates recognition, and drives loyalty. Our branding service covers everything from logo design and colour palette development to typography, brand guidelines, and stationery design — giving you a cohesive visual identity that works across all touchpoints.',
@@ -74,14 +74,14 @@ const services = [
     ],
     process: ['Brand Audit & Research', 'Strategy & Positioning', 'Concept Exploration', 'Design Refinement', 'Guidelines Delivery'],
     relatedProjects: [
-      { title: 'Processwork Flyer', image: '/images/Finished designs/Ivanlee Designs2.jpg' },
+      { title: 'Processwork Flyer', image: '/images/Finished-designs/Ivanlee-Designs2.jpg' },
     ],
   },
   {
     slug: 'creative',
     title: 'Creative',
     icon: '✨',
-    image: '/images/Finished designs/creative-cover.jpg',
+    image: '/images/Finished-designs/creative-cover.jpg',
     heroText: 'Ideas that captivate and inspire.',
     content: 'Sometimes a project needs something beyond standard design. Our creative service covers campaign concepts, visual storytelling, event materials, presentations, and everything in between — giving your projects the creative energy they need to stand out.',
     intro: 'Creativity is at the heart of everything we do. Whether you need a campaign concept, event collateral, or a fresh creative direction, we bring ideas to life with originality, skill, and attention to detail. Our creative team works closely with you to ensure every project feels unique and impactful.',
@@ -103,7 +103,7 @@ const services = [
     slug: 'printing',
     title: 'Printing',
     icon: '🖨️',
-    image: '/images/Finished designs/printingb.jpg',
+    image: '/images/Finished-designs/printingb.jpg',
     heroText: 'Premium print, delivered on time.',
     content: 'High-quality commercial printing with fast turnaround and competitive pricing. From business cards to large format banners, we handle print production from file preparation to delivery — ensuring every piece is crisp, accurate, and professionally finished.',
     intro: 'Print is still one of the most powerful ways to communicate. Our printing service covers everything from small run digital printing to large format production, with premium materials and finishes that make your printed materials look and feel exceptional.',
@@ -118,7 +118,7 @@ const services = [
     process: ['File Review & Preparation', 'Material Selection', 'Proof Approval', 'Print Production', 'Quality Check & Delivery'],
     relatedProjects: [
       { title: 'Exhibition Display Design', image: '/images/Pin by Nuno Eusebio on Atelier _ Graphic design inspiration poster, Company.jpg' },
-      { title: 'Healing History Publication', image: '/images/Finished designs/Healing-History 1.jpeg' },
+      { title: 'Healing History Publication', image: '/images/Finished-designs/Healing-History-1.jpeg' },
     ],
   },
 ];
@@ -150,7 +150,7 @@ export default function ServicePage({ service }) {
           <div className="absolute inset-0 bg-gradient-to-r from-charles-darker/95 via-charles-darker/60 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-charles-darker via-transparent to-transparent" />
         </div>
-        <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 py-28">
+        <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 pt-56 pb-28">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.nav variants={fadeInUp} className="flex items-center gap-2 text-gray-400 mb-8 font-body text-sm">
               <Link href="/services" className="hover:text-charles-lime transition-colors">Services</Link>
@@ -183,7 +183,7 @@ export default function ServicePage({ service }) {
               <div className="relative h-[400px] overflow-hidden">
                 <Image
                   src={service.image}
-                  alt={`${service.title} at Pathway`}
+                  alt={`${service.title} at Nija`}
                   fill
                   className="object-cover"
                 />
@@ -191,7 +191,7 @@ export default function ServicePage({ service }) {
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
               <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">About This Service</motion.p>
-              <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">{service.title} at Pathway</motion.h2>
+              <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">{service.title} at Nija</motion.h2>
               <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8" />
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed">{service.intro}</motion.p>
             </motion.div>

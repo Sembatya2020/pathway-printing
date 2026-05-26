@@ -8,8 +8,8 @@ const fadeInUp = {
 
 export default function PrivacyPolicy() {
   return (
-    <Layout title="Privacy Policy" description="Privacy Policy for Pathway Printing & Graphics.">
-      <section className="bg-charles-darker py-32 md:py-48">
+    <Layout title="Privacy Policy" description="Privacy Policy for Nija Print & Graphics Studio.">
+      <section className="bg-charles-darker pt-56 pb-32">
         <div className="mx-auto max-w-4xl px-6 md:px-10">
           <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-10">
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
             </h1>
             <div className="prose prose-invert prose-lg max-w-none font-body text-gray-300 space-y-8">
               <p>
-                At Pathway Printing & Graphics, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website or use our services.
+                At Nija Print & Graphics Studio, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website or use our services.
               </p>
               
               <div>
@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
                 <p>
                   If you have any questions about this Privacy Policy, please contact us at:
                   <br />
-                  Email: info@pathway-printing.net
+                  Email: info@nijagraphicsstudio.com
                   <br />
                   Phone: +256 782 807 255
                 </p>

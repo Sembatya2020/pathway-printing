@@ -8,7 +8,10 @@ export default function Footer() {
           
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-4 text-white">Pathway Printing<br />& Graphics</h3>
+            <h3 className="font-heading text-2xl font-bold mb-2 text-white">Nija Print &<br />Graphics Studio</h3>
+            <p className="font-body italic text-charles-lime text-sm mb-4 tracking-wide">
+              Designing with purpose
+            </p>
             <p className="font-body text-gray-400 leading-relaxed text-sm mb-6">
               Creative design and printing services based in Kampala, Uganda — working with clients both locally and online.
             </p>
@@ -51,7 +54,7 @@ export default function Footer() {
             <h3 className="font-heading text-lg font-bold mb-4 text-white">Contact Us</h3>
             <div className="flex flex-col gap-3 font-body text-gray-400 text-sm">
               <p>Kampala, Uganda<br />Available for both local and online projects</p>
-              <a href="mailto:info@pathway-printing.net" className="hover:text-charles-lime transition-colors">info@pathway-printing.net</a>
+              <a href="mailto:info@nijagraphicsstudio.com" className="hover:text-charles-lime transition-colors">info@nijagraphicsstudio.com</a>
               <a href="tel:+256782807255" className="hover:text-charles-lime transition-colors">+256 782 807 255</a>
               <div className="pt-2 border-t border-gray-700/50">
                 <p className="text-xs text-gray-500 mb-1">Business Hours</p>
@@ -65,7 +68,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs font-body text-gray-500">
-            © {new Date().getFullYear()} Pathway Printing & Graphics. All rights reserved.
+            © {new Date().getFullYear()} Nija Print & Graphics Studio. All rights reserved.
           </p>
           <div className="flex gap-6 text-xs font-body text-gray-500">
             <Link href="/privacy-policy" className="hover:text-charles-lime transition-colors">Privacy Policy</Link>

@@ -56,12 +56,12 @@ export default function Contact() {
         },
         body: JSON.stringify({
           ...formData,
-          _subject: `New Pathway Website Message from ${formData.firstName} ${formData.lastName}`
+          _subject: `New Nija Website Message from ${formData.firstName} ${formData.lastName}`
         })
       });
 
       if (response.ok) {
-        setSuccess('Thank you for contacting Pathway Printing & Graphics. Your message has been sent successfully.');
+        setSuccess('Thank you for contacting Nija Print & Graphics Studio. Your message has been sent successfully.');
         setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
         setAgreedToTerms(false);
         // Scroll to success message
@@ -82,14 +82,14 @@ export default function Contact() {
   };
 
   return (
-    <Layout title="Contact" description="Get in touch with Pathway Printing & Graphics in Kampala.">
+    <Layout title="Contact" description="Get in touch with Nija Print & Graphics Studio in Kampala.">
 
       {/* Hero */}
-      <section className="bg-charles-darker py-32 md:py-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
+      <section className="bg-charles-darker pt-48 pb-32 md:pt-64 md:pb-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
-            src="/images/Finished designs/vision.jpg"
-            alt="Contact Pathway Printing"
+            src="/images/Finished-designs/vision.jpg"
+            alt="Contact Nija Print & Graphics Studio"
             fill
             className="object-cover object-center"
             priority
@@ -141,7 +141,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Email</p>
-                  <a href="mailto:info@pathway-printing.net" className="text-white hover:text-charles-lime transition-colors text-lg font-bold">info@pathway-printing.net</a>
+                  <a href="mailto:info@nijagraphicsstudio.com" className="text-white hover:text-charles-lime transition-colors text-lg font-bold">info@nijagraphicsstudio.com</a>
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">WhatsApp</p>
@@ -153,7 +153,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Facebook</p>
-                  <a href="https://www.facebook.com/profile.php?id=61588577943873" target="_blank" rel="noreferrer" className="text-white hover:text-charles-lime transition-colors text-lg font-bold">Pathway Printing & Graphics</a>
+                  <a href="https://www.facebook.com/profile.php?id=61588577943873" target="_blank" rel="noreferrer" className="text-white hover:text-charles-lime transition-colors text-lg font-bold">Nija Print & Graphics Studio</a>
                 </div>
                 <div className="pt-4 border-t border-gray-700">
                   <p className="text-sm text-gray-500">Business Hours</p>

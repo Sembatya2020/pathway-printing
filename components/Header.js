@@ -6,8 +6,6 @@ const servicesDropdown = [
   { label: 'Web Design', slug: 'web-design' },
   { label: 'Graphic Design', slug: 'graphic-design' },
   { label: 'Music', slug: 'music', isPage: true },
-  { label: 'Creative', slug: 'creative' },
-  { label: 'Printing', slug: 'printing' },
 ];
 
 export default function Header() {
@@ -22,17 +20,30 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 h-[80px] transition-all duration-300 ${scrolled ? 'bg-charles-darker/95 backdrop-blur-md shadow-lg' : 'bg-charles-darker'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 h-[100px] transition-all duration-300 ${scrolled ? 'bg-charles-darker/95 backdrop-blur-md shadow-lg h-[80px]' : 'bg-charles-darker'}`}>
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 md:px-10">
-        <Link href="/" className="relative h-[50px] md:h-[80px] w-[180px] md:w-[340px] transition-transform hover:opacity-80 flex items-center">
-          <Image
-            src="/images/Finished designs/Logo.png"
-            alt="Pathway Printing & Graphics"
-            fill
-            unoptimized
-            className="object-contain object-left scale-[1.8] md:scale-[2.15] origin-left saturate-[0.85] opacity-95 transition-all pointer-events-none"
-            priority
-          />
+        <Link href="/" className="flex items-center gap-1.5 transition-all hover:opacity-95 group">
+          <div className="relative h-[120px] md:h-[170px] w-[120px] md:w-[170px] transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_18px_rgba(190,242,100,0.35)] flex-shrink-0">
+            <Image
+              src="/images/Finished-designs/logo.png"
+              alt="Nija Print & Graphics Studio Logo"
+              fill
+              unoptimized
+              className="object-contain saturate-[1.15] brightness-[1.15]"
+              priority
+            />
+          </div>
+          <div className="flex flex-col justify-center leading-none">
+            <h1 className="text-[10px] md:text-xs font-heading font-bold text-white tracking-[0.08em] uppercase leading-tight">
+              Nija <span className="text-charles-lime">Print &amp;</span>
+            </h1>
+            <h1 className="text-[10px] md:text-xs font-heading font-bold text-white tracking-[0.08em] uppercase leading-tight">
+              Graphics <span className="text-charles-lime">Studio</span>
+            </h1>
+            <p className="mt-0.5 text-[8px] md:text-[9px] font-body italic text-gray-400 tracking-wide">
+              Designing with purpose
+            </p>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
@@ -49,7 +60,7 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div className={`absolute top-[80px] left-1/2 -translate-x-1/2 w-64 bg-charles-darker border border-gray-700 border-t-2 border-t-charles-lime shadow-2xl transition-all duration-300 origin-top ${open ? 'opacity-100 scale-y-100 pointer-events-auto' : 'opacity-0 scale-y-95 pointer-events-none'}`}>
+            <div className={`absolute top-[100px] left-1/2 -translate-x-1/2 w-64 bg-charles-darker border border-gray-700 border-t-2 border-t-charles-lime shadow-2xl transition-all duration-300 origin-top ${open ? 'opacity-100 scale-y-100 pointer-events-auto' : 'opacity-0 scale-y-95 pointer-events-none'}`}>
               <div className="flex flex-col py-2">
                 {servicesDropdown.map((item) => (
                   <Link
@@ -96,7 +107,7 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`absolute top-[80px] left-0 w-full bg-charles-darker border-t border-charles-lime shadow-xl lg:hidden max-h-[calc(100vh-80px)] overflow-y-auto transition-all duration-300 ${mobileOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+      <div className={`absolute top-[100px] left-0 w-full bg-charles-darker border-t border-charles-lime shadow-xl lg:hidden max-h-[calc(100vh-100px)] overflow-y-auto transition-all duration-300 ${mobileOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
         <div className="flex flex-col gap-1 px-6 py-6 font-heading">
           <Link href="/" onClick={() => setMobileOpen(false)} className="text-white hover:text-charles-lime py-3 text-lg font-semibold border-b border-gray-700/50">Home</Link>
           <Link href="/about" onClick={() => setMobileOpen(false)} className="text-white hover:text-charles-lime py-3 text-lg font-semibold border-b border-gray-700/50">About</Link>

@@ -8,8 +8,8 @@ const fadeInUp = {
 
 export default function TermsAndConditions() {
   return (
-    <Layout title="Terms & Conditions" description="Terms and Conditions for Pathway Printing & Graphics.">
-      <section className="bg-charles-darker py-32 md:py-48">
+    <Layout title="Terms & Conditions" description="Terms and Conditions for Nija Print & Graphics Studio.">
+      <section className="bg-charles-darker pt-56 pb-32">
         <div className="mx-auto max-w-4xl px-6 md:px-10">
           <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-10">
@@ -17,13 +17,13 @@ export default function TermsAndConditions() {
             </h1>
             <div className="prose prose-invert prose-lg max-w-none font-body text-gray-300 space-y-8">
               <p>
-                Welcome to Pathway Printing & Graphics. By accessing our website and using our services, you agree to comply with and be bound by the following terms and conditions.
+                Welcome to Nija Print & Graphics Studio. By accessing our website and using our services, you agree to comply with and be bound by the following terms and conditions.
               </p>
               
               <div>
                 <h2 className="text-2xl font-heading font-bold text-white mb-4 text-charles-lime">1. Services</h2>
                 <p>
-                  Pathway Printing & Graphics provides graphic design, branding, and printing services. We reserve the right to modify, suspend, or discontinue any service at any time without notice.
+                  Nija Print & Graphics Studio provides graphic design, branding, and printing services. We reserve the right to modify, suspend, or discontinue any service at any time without notice.
                 </p>
               </div>
 
@@ -51,7 +51,7 @@ export default function TermsAndConditions() {
               <div>
                 <h2 className="text-2xl font-heading font-bold text-white mb-4 text-charles-lime">5. Limitation of Liability</h2>
                 <p>
-                  Pathway Printing & Graphics is not liable for any indirect, incidental, or consequential damages resulting from the use or inability to use our services or products.
+                  Nija Print & Graphics Studio is not liable for any indirect, incidental, or consequential damages resulting from the use or inability to use our services or products.
                 </p>
               </div>
               

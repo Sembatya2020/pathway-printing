@@ -14,14 +14,14 @@ const stagger = {
 
 export default function About() {
   return (
-    <Layout title="About" description="Learn about Pathway Printing & Graphics — Kampala's creative design and print experts.">
+    <Layout title="About" description="Learn about Nija Print & Graphics Studio — Kampala's creative design and print experts.">
 
       {/* Hero */}
-      <section className="bg-charles-darker py-32 md:py-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
+      <section className="bg-charles-darker pt-48 pb-32 md:pt-64 md:pb-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
-            src="/images/Finished designs/about-cover.jpg"
-            alt="About Pathway Printing & Graphics"
+            src="/images/Finished-designs/about-cover.jpg"
+            alt="About Nija Print & Graphics Studio"
             fill
             className="object-cover object-center"
             priority
@@ -58,7 +58,7 @@ export default function About() {
             >
               <Image
                 src="/images/hoe-page.jpg"
-                alt="Pathway Printing studio workspace"
+                alt="Nija Print & Graphics Studio workspace"
                 width={800}
                 height={600}
                 className="w-full h-[400px] object-cover"
@@ -68,7 +68,7 @@ export default function About() {
               <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">My Story</motion.h2>
               <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8" />
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed mb-6">
-                I am based in Kampala, Uganda, and Pathway Printing &amp; Graphics was built from my passion for creative design, quality printing, and music communication.
+                I am based in Kampala, Uganda, and Nija Print & Graphics Studio was built from my passion for creative design, quality printing, and music communication.
               </motion.p>
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed mb-6">
                 I have worked with organizations such as Processwork Institute of Hawaii, International Peace Group, Magarini Children's Center, and The Whirling Rainbow Foundation, along with several local NGOs. Through these experiences, I have delivered work based on each client's unique needs.

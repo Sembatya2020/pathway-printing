@@ -9,36 +9,22 @@ const services = [
     title: 'Web Design',
     slug: 'web-design',
     description: 'Responsive websites built to engage your audience and communicate your message clearly.',
-    image: '/images/Finished designs/webdesign.jpg',
+    image: '/images/Finished-designs/webdesign.jpg',
     icon: '💻'
   },
   {
     title: 'Graphic Design',
     slug: 'graphic-design',
     description: 'Flyers, posters, social media designs, and print materials that are clear and visually strong.',
-    image: '/images/Finished designs/graphic.jpg',
+    image: '/images/Finished-designs/graphic.jpg',
     icon: '🎨'
   },
   {
     title: 'Music',
     slug: 'music',
     description: 'Songwriting, collaboration, and custom music for events and creative projects.',
-    image: '/images/Finished designs/music.jpg',
+    image: '/images/Finished-designs/music.jpg',
     icon: '🎵'
-  },
-  {
-    title: 'Creative',
-    slug: 'creative',
-    description: 'Creative direction, visual storytelling, and content that brings your ideas to life.',
-    image: '/images/Finished designs/creative.jpg',
-    icon: '✨'
-  },
-  {
-    title: 'Printing',
-    slug: 'printing',
-    description: 'Quality offset and digital printing with reliable turnaround times.',
-    image: '/images/Finished designs/printingx.jpg',
-    icon: '🖨️'
   }
 ];
 
@@ -64,22 +50,42 @@ const projects = [
   {
     title: 'Aikido Event Poster',
     category: 'Poster Design',
-    image: '/images/Finished designs/Aikido.jpeg'
+    image: '/images/Finished-designs/Aikido.jpeg'
   },
   {
     title: 'Healing History Publication',
     category: 'Book & Print Design',
-    image: '/images/Finished designs/Healing-History 1.jpeg'
+    image: '/images/Finished-designs/Healing-History-1.jpeg'
   },
   {
     title: 'Processwork Flyer',
     category: 'Branding & Identity',
-    image: '/images/Finished designs/Ivanlee Designs2.jpg'
+    image: '/images/Finished-designs/Ivanlee-Designs2.jpg'
   },
   {
-    title: 'Corporate Brochure Design',
-    category: 'Print Design',
-    image: '/images/Expert Designs, Flexible Solutions.jpg'
+    title: 'Vector Portrait',
+    category: 'Illustration',
+    image: '/images/Finished-designs/new%20(5).jpeg'
+  },
+  {
+    title: 'Critical Mass Kampala',
+    category: 'Event Flyer',
+    image: '/images/Finished-designs/new%20(9).jpeg'
+  },
+  {
+    title: 'Eid Holidays Travel',
+    category: 'Promotional Flyer',
+    image: '/images/Finished-designs/new%20(12).jpeg'
+  },
+  {
+    title: 'UAE Visa Service',
+    category: 'Social Media Design',
+    image: '/images/Finished-designs/new%20(13).jpeg'
+  },
+  {
+    title: 'Christmas Movie Offer',
+    category: 'Promotional Flyer',
+    image: '/images/Finished-designs/new%20(11).jpeg'
   },
 ];
 
@@ -127,33 +133,33 @@ export default function Home() {
   const heroSlides = [
     {
       title: "Design · Print · Music",
-      headline: "Pathway Printing &<br /><span class=\"text-charles-lime\">Graphics</span>",
+      headline: "Nija Print &<br /><span class=\"text-charles-lime\">Graphics Studio</span>",
       description: "Helping you bring your ideas to life through creative design, print, and music.",
-      image: "/images/Finished designs/digital.jpg"
+      image: "/images/Finished-designs/digital.jpg"
     },
     {
       title: "Quality You Can Trust",
       headline: "Quality You Can<br /><span class=\"text-charles-lime\">See & Feel</span>",
       description: "From flyers to banners, I deliver quality print work with reliable turnaround — every time.",
-      image: "/images/Finished designs/vision.jpg"
+      image: "/images/Finished-designs/vision.jpg"
     },
     {
       title: "Creative Design Solutions",
       headline: "Designs That<br /><span class=\"text-charles-lime\">Communicate</span>",
       description: "I create clean, effective designs that help your message stand out and connect with the right audience.",
-      image: "/images/Finished designs/printing.jpg"
+      image: "/images/Finished-designs/printing.jpg"
     },
     {
       title: "Web Design That Works",
       headline: "Digital Experiences<br />That <span class=\"text-charles-lime\">Engage</span>",
       description: "Responsive, modern websites built to represent your brand and communicate clearly online.",
-      image: "/images/Finished designs/quality.jpg"
+      image: "/images/Finished-designs/quality.jpg"
     },
     {
       title: "Music & Creative Projects",
       headline: "Ideas That<br /><span class=\"text-charles-lime\">Inspire</span>",
       description: "Songwriting, collaboration, and creative projects that express hope and tell meaningful stories.",
-      image: "/images/Finished designs/project-cover.jpg"
+      image: "/images/Finished-designs/project-cover.jpg"
     }
   ];
 
@@ -327,7 +333,7 @@ export default function Home() {
           <div className="grid gap-16 lg:grid-cols-2 items-center">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
               <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">Why Choose Me</motion.p>
-              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Why Choose Pathway</motion.h2>
+              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Why Choose Nija</motion.h2>
               <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8"></motion.div>
               <motion.p variants={fadeInUp} className="text-lg font-body text-gray-300 leading-relaxed mb-10 max-w-xl">
                 I provide creative, reliable, and affordable printing and graphic design services for businesses, schools, churches, and individuals. While I serve clients locally in Uganda, I have also worked with online clients, including flyer design projects for clients in the United States. I focus on understanding your needs and delivering work that is simple, clear, and effective.
@@ -459,7 +465,7 @@ export default function Home() {
             >
               <Image
                 src="/images/founder.png"
-                alt="Ivan Sembatya - Founder of Pathway Printing & Graphics"
+                alt="Ivan Sembatya - Founder of Nija Print & Graphics Studio"
                 fill
                 className="object-cover object-top"
               />
@@ -475,7 +481,7 @@ export default function Home() {
               <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8"></motion.div>
               <motion.div variants={fadeInUp} className="space-y-6 text-lg font-body text-gray-300 leading-relaxed">
                 <p>
-                  My name is <span className="text-white font-bold">Ivan Sembatya</span>, founder of Pathway Printing & Graphics. I am a graphic designer and creative professional based in Uganda. I hold a Bachelor's degree in Software Development from BYU and I am currently continuing my studies in Process Work.
+                  My name is <span className="text-white font-bold">Ivan Sembatya</span>, founder of Nija Print & Graphics Studio. I am a graphic designer and creative professional based in Uganda. I hold a Bachelor's degree in Software Development from BYU and I am currently continuing my studies in Process Work.
                 </p>
                 <p>
                   I work with individuals, businesses, organizations, and charities to create websites, graphics, and creative content that communicate clearly and effectively. Whether you need a website for your project, designs for a special event, or music that expresses your vision, I am ready to work with you and bring your ideas to life.
