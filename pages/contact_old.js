@@ -30,10 +30,10 @@ export default function Contact() {
           <div className="section-card">
             <h2 className="text-xl font-semibold text-slate-800">Contact information</h2>
             <ul className="mt-4 space-y-2 text-sm text-slate-600">
-              <li><strong>Email:</strong> <a href="mailto:info@nijagraphicsstudio.com" className="text-brand-700">info@nijagraphicsstudio.com</a></li>
+              <li><strong>Email:</strong> <a href="mailto:info@nija-graphicsstudio.com" className="text-brand-700">info@nija-graphicsstudio.com</a></li>
               <li><strong>WhatsApp:</strong> <a href="https://wa.me/256755960836" className="text-brand-700">+256755960836</a></li>
               <li><strong>Call:</strong> <a href="tel:+256782897255" className="text-brand-700">+256782897255</a></li>
-              <li><strong>Location:</strong> Bwaise, Kampala, along Bombo Road</li>
+              <li><strong>Location:</strong> P.O. Box 209415, Kampala GPO, Kampala, Uganda</li>
             </ul>
             <p className="mt-4 text-sm text-slate-500">Office hours: Monday–Saturday, 8am–6pm</p>
           </div>

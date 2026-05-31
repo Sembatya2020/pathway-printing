@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 const servicesDropdown = [
   { label: 'Web Design', slug: 'web-design' },
   { label: 'Graphic Design', slug: 'graphic-design' },
+  { label: 'IT & Tech Support', slug: 'it-support' },
   { label: 'Music', slug: 'music', isPage: true },
 ];
 

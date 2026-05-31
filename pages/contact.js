@@ -115,7 +115,8 @@ export default function Contact() {
       {/* Map */}
       <section className="relative h-80 md:h-96 bg-charles-dark">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7489088476803!2d32.5814!3d0.3431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176b8e8a8e8e8e8f%3A0x8e8e8e8e8e8e8e8e!2sBwaise%2C%20Kampala%2C%20Uganda!5e0!3m2!1sen!2sug!4v1234567890"
+          title="Kampala, Uganda"
+          src="https://www.google.com/maps?q=Kampala%20GPO%2C%20Kampala%2C%20Uganda&output=embed"
           width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
@@ -131,9 +132,9 @@ export default function Contact() {
               <motion.h2 variants={fadeInUp} className="text-3xl font-heading font-bold text-charles-lime mb-8">Address</motion.h2>
               <motion.div variants={fadeInUp} className="space-y-6 font-body text-gray-300">
                 <div>
-                  <p className="text-white font-heading font-bold text-lg">Bwaise, Kampala</p>
-                  <p>Along Bombo Road</p>
+                  <p className="text-white font-heading font-bold text-lg">P.O. Box 209415, Kampala GPO</p>
                   <p>Kampala, Uganda</p>
+                  <p className="text-sm text-gray-400">Available for both local and online projects worldwide</p>
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Phone</p>
@@ -141,7 +142,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">Email</p>
-                  <a href="mailto:info@nijagraphicsstudio.com" className="text-white hover:text-charles-lime transition-colors text-lg font-bold">info@nijagraphicsstudio.com</a>
+                  <a href="mailto:info@nija-graphicsstudio.com" className="text-white hover:text-charles-lime transition-colors text-lg font-bold">info@nija-graphicsstudio.com</a>
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-1">WhatsApp</p>

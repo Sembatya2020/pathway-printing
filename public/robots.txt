@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nija-graphicsstudio.com/sitemap.xml

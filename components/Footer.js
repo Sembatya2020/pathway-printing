@@ -34,6 +34,7 @@ export default function Footer() {
               <Link href="/services/branding" className="hover:text-charles-lime transition-colors">Branding</Link>
               <Link href="/services/creative" className="hover:text-charles-lime transition-colors">Creative</Link>
               <Link href="/services/printing" className="hover:text-charles-lime transition-colors">Printing</Link>
+              <Link href="/services/it-support" className="hover:text-charles-lime transition-colors">IT & Tech Support</Link>
             </div>
           </div>
 
@@ -53,8 +54,8 @@ export default function Footer() {
           <div>
             <h3 className="font-heading text-lg font-bold mb-4 text-white">Contact Us</h3>
             <div className="flex flex-col gap-3 font-body text-gray-400 text-sm">
-              <p>Kampala, Uganda<br />Available for both local and online projects</p>
-              <a href="mailto:info@nijagraphicsstudio.com" className="hover:text-charles-lime transition-colors">info@nijagraphicsstudio.com</a>
+              <p>P.O. Box 209415, Kampala GPO<br />Kampala, Uganda<br />Available for both local and online projects</p>
+              <a href="mailto:info@nija-graphicsstudio.com" className="hover:text-charles-lime transition-colors">info@nija-graphicsstudio.com</a>
               <a href="tel:+256782807255" className="hover:text-charles-lime transition-colors">+256 782 807 255</a>
               <div className="pt-2 border-t border-gray-700/50">
                 <p className="text-xs text-gray-500 mb-1">Business Hours</p>

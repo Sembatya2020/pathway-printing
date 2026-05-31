@@ -15,6 +15,7 @@ const stagger = {
 const services = [
   { slug: 'web-design', title: 'Web Design', description: 'Responsive, modern websites from simple sites to e-commerce platforms that communicate your message clearly online.', image: '/images/Finished-designs/webdesign.jpg', icon: '💻' },
   { slug: 'graphic-design', title: 'Graphic Design', description: 'Flyers, posters, social media designs, and print materials that are clear, effective, and visually strong.', image: '/images/Finished-designs/graphic.jpg', icon: '🎨' },
+  { slug: 'it-support', title: 'IT & Tech Support', description: 'Remote and on-site IT support — computer troubleshooting, software setup, virus removal, network setup, and small-business IT maintenance.', image: '/images/Finished-designs/keyboard.jpg', icon: '🛠️' },
   { slug: 'music', title: 'Music', description: 'Songwriting, collaboration, and custom music for events, creative projects, and meaningful storytelling.', image: '/images/Finished-designs/music.jpg', icon: '🎵', isPage: true },
 
 ];
@@ -120,7 +121,7 @@ export default function Services() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
             variants={stagger}
-            className="grid gap-8 md:grid-cols-2 lg:grid-cols-4"
+            className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
           >
             {/* Graphic Design */}
             <motion.div variants={fadeInUp} className="bg-charles-darker p-8 border-t-2 border-charles-lime">
@@ -141,6 +142,7 @@ export default function Services() {
                 <li className="flex justify-between"><span>Simple Website</span><span className="text-charles-lime font-bold">From $150</span></li>
                 <li className="flex justify-between"><span>Business Website</span><span className="text-charles-lime font-bold">$300 – $600</span></li>
                 <li className="flex justify-between"><span>E-commerce Website</span><span className="text-charles-lime font-bold">$600 – $1000</span></li>
+                <li className="flex justify-between"><span>Website Setup (WordPress)</span><span className="text-charles-lime font-bold">$50 – $500</span></li>
               </ul>
             </motion.div>
 
@@ -151,6 +153,30 @@ export default function Services() {
               <ul className="space-y-3 font-body text-gray-400 text-sm">
                 <li>Pricing depends on quantity and material</li>
                 <li className="text-charles-lime font-bold">Contact me for a custom quote</li>
+              </ul>
+            </motion.div>
+
+            {/* IT & Tech Support */}
+            <motion.div variants={fadeInUp} className="bg-charles-darker p-8 border-t-2 border-charles-lime">
+              <div className="text-3xl mb-4">🛠️</div>
+              <h3 className="text-xl font-heading font-bold text-white mb-4">IT & Tech Support</h3>
+              <ul className="space-y-3 font-body text-gray-400 text-sm">
+                <li className="flex justify-between"><span>PC Cleanup & Tune-Up</span><span className="text-charles-lime font-bold">$10 – $30</span></li>
+                <li className="flex justify-between"><span>Windows Installation</span><span className="text-charles-lime font-bold">$15 – $50</span></li>
+                <li className="flex justify-between"><span>Remote Troubleshooting</span><span className="text-charles-lime font-bold">$10 – $25 / hr</span></li>
+                <li className="flex justify-between"><span>Virus & Malware Removal</span><span className="text-charles-lime font-bold">From $20</span></li>
+              </ul>
+            </motion.div>
+
+            {/* Business IT Support */}
+            <motion.div variants={fadeInUp} className="bg-charles-darker p-8 border-t-2 border-charles-lime">
+              <div className="text-3xl mb-4">🏢</div>
+              <h3 className="text-xl font-heading font-bold text-white mb-4">Business IT Support</h3>
+              <ul className="space-y-3 font-body text-gray-400 text-sm">
+                <li className="flex justify-between"><span>Monthly Support Package</span><span className="text-charles-lime font-bold">$50 – $300 / mo</span></li>
+                <li className="flex justify-between"><span>Network & Wi-Fi Setup</span><span className="text-charles-lime font-bold">From $40</span></li>
+                <li className="flex justify-between"><span>Data Backup & Recovery</span><span className="text-charles-lime font-bold">From $25</span></li>
+                <li className="flex justify-between"><span>Google Workspace / M365</span><span className="text-charles-lime font-bold">From $30</span></li>
               </ul>
             </motion.div>
 

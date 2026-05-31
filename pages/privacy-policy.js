@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
                 <p>
                   If you have any questions about this Privacy Policy, please contact us at:
                   <br />
-                  Email: info@nijagraphicsstudio.com
+                  Email: info@nija-graphicsstudio.com
                   <br />
                   Phone: +256 782 807 255
                 </p>
