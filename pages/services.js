@@ -25,7 +25,7 @@ export default function Services() {
     <Layout title="Services" description="Explore our full range of design, print, and branding services.">
 
       {/* Hero */}
-      <section className="bg-charles-darker pt-48 pb-32 md:pt-64 md:pb-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
+      <section className="bg-charles-darker pt-28 pb-12 md:pt-32 md:pb-16 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
             src="/images/Finished-designs/digital.jpg"
@@ -128,9 +128,9 @@ export default function Services() {
               <div className="text-3xl mb-4">🎨</div>
               <h3 className="text-xl font-heading font-bold text-white mb-4">Graphic Design</h3>
               <ul className="space-y-3 font-body text-gray-400 text-sm">
-                <li className="flex justify-between"><span>Flyers & Posters</span><span className="text-charles-lime font-bold">From $25</span></li>
-                <li className="flex justify-between"><span>Social Media Designs</span><span className="text-charles-lime font-bold">From $10</span></li>
-                <li className="flex justify-between"><span>Event Designs</span><span className="text-charles-lime font-bold">From $25</span></li>
+                <li className="flex justify-between"><span>Flyers & Posters</span><span className="text-charles-lime font-bold">From $30</span></li>
+                <li className="flex justify-between"><span>Social Media Designs</span><span className="text-charles-lime font-bold">From $30</span></li>
+                <li className="flex justify-between"><span>Event Designs</span><span className="text-charles-lime font-bold">From $30</span></li>
               </ul>
             </motion.div>
 
@@ -139,7 +139,7 @@ export default function Services() {
               <div className="text-3xl mb-4">💻</div>
               <h3 className="text-xl font-heading font-bold text-white mb-4">Web Design</h3>
               <ul className="space-y-3 font-body text-gray-400 text-sm">
-                <li className="flex justify-between"><span>Simple Website</span><span className="text-charles-lime font-bold">From $150</span></li>
+                <li className="flex justify-between"><span>Simple Website</span><span className="text-charles-lime font-bold">From $300</span></li>
                 <li className="flex justify-between"><span>Business Website</span><span className="text-charles-lime font-bold">$300 – $600</span></li>
                 <li className="flex justify-between"><span>E-commerce Website</span><span className="text-charles-lime font-bold">$600 – $1000</span></li>
                 <li className="flex justify-between"><span>Website Setup (WordPress)</span><span className="text-charles-lime font-bold">$50 – $500</span></li>

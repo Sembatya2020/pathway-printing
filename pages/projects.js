@@ -190,6 +190,42 @@ const projects = [
     description: 'A bold promotional flyer for a UAE visa service — clean typography, vivid gradients, and lifestyle imagery designed to drive conversions on social media.',
     image: '/images/Finished-designs/new%20(13).jpeg'
   },
+  {
+    title: 'TV Show Promotional Poster',
+    category: 'Graphic Design',
+    description: 'A bold, broadcast-ready poster for a featured TV show — strong typography, cinematic imagery, and a confident layout designed to grab attention on every screen it lands on.',
+    image: '/images/Finished-designs/TV-show.jpg'
+  },
+  {
+    title: 'Cabaret Plays Theatre Poster',
+    category: 'Graphic Design',
+    description: 'An expressive poster for a live cabaret theatre production — dramatic colour, stylised typography, and an atmospheric mood that captures the energy of the performance.',
+    image: '/images/Finished-designs/Cabaret%20plays.jpg'
+  },
+  {
+    title: 'Destiny Event Flyer',
+    category: 'Graphic Design',
+    description: 'An inspiring event flyer built around the theme of destiny — warm visuals, clear messaging hierarchy, and a layout designed to draw the audience in and drive attendance.',
+    image: '/images/Finished-designs/destiny.jpg'
+  },
+  {
+    title: 'Ignite Campaign Flyer',
+    category: 'Graphic Design',
+    description: 'A high-energy campaign flyer for the Ignite event — bold colour, expressive typography, and a layout engineered to spark interest and motivate sign-ups.',
+    image: '/images/Finished-designs/Ignite.jpg'
+  },
+  {
+    title: 'Restaurant Promo Flyer',
+    category: 'Graphic Design',
+    description: 'A mouth-watering promotional flyer for a local restaurant — appetising photography, warm brand colours, and a clear menu-driven layout designed to convert hungry scrollers into walk-in customers.',
+    image: '/images/Finished-designs/restaurant.jpeg'
+  },
+  {
+    title: 'Massage & Wellness Flyer',
+    category: 'Graphic Design',
+    description: 'A calming wellness flyer for a massage and spa service — soft palette, balanced spacing, and clean typography that communicates relaxation and trust at a glance.',
+    image: '/images/Finished-designs/massage.jpeg'
+  },
 
   // Music & Creative
   {
@@ -246,7 +282,7 @@ export default function Projects() {
     <Layout title="Projects" description="Browse our portfolio of design, branding, and print projects.">
 
       {/* Hero */}
-      <section className="bg-charles-darker py-32 md:py-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
+      <section className="bg-charles-darker pt-28 pb-12 md:pt-32 md:pb-16 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
             src="/images/Finished-designs/project-cover.jpg"

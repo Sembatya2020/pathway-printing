@@ -180,7 +180,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Carousel Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-charles-darker">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-charles-darker">
         
         {/* Carousel Backgrounds */}
         {heroSlides.map((slide, index) => (
@@ -229,6 +229,22 @@ export default function Home() {
               {heroSlides[currentSlide].description}
             </motion.p>
             
+            {/* Navigation Dots — above buttons */}
+            <motion.div variants={fadeInUp} className="flex justify-center gap-4 mb-8">
+              {heroSlides.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`h-2 rounded-full transition-all duration-500 ease-out focus:outline-none ${
+                    index === currentSlide
+                      ? 'w-12 bg-charles-lime'
+                      : 'w-4 bg-gray-600'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </motion.div>
+
             <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-5">
               <Link href="/contact" className="text-lg px-8 py-4 bg-charles-lime text-charles-dark hover:bg-charles-limeHover transition-all inline-block font-heading font-bold shadow-lg shadow-charles-lime/20">
                 Get a Free Quote
@@ -238,33 +254,32 @@ export default function Home() {
               </Link>
             </motion.div>
           </motion.div>
-
-          {/* Navigation Dots (Centered Bottom) */}
-          <div className="absolute bottom-12 flex gap-4">
-            {heroSlides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`h-2 rounded-full transition-all duration-500 ease-out focus:outline-none ${
-                  index === currentSlide 
-                    ? 'w-12 bg-charles-lime' 
-                    : 'w-4 bg-gray-600'
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
 
         {/* Scroll indicator */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.8 }}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20"
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center"
         >
-          <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-charles-lime mx-auto mb-2"></div>
-          <p className="text-charles-lime text-xs font-heading uppercase tracking-widest">Scroll</p>
+          <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-charles-lime mb-1"></div>
+          <motion.svg
+            animate={{ y: [0, 6, 0] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5 text-charles-lime -mt-1"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </motion.svg>
+          <p className="text-charles-lime text-xs font-heading uppercase tracking-widest mt-1">Scroll</p>
         </motion.div>
       </section>
 
@@ -322,6 +337,122 @@ export default function Home() {
           <div className="mt-16 text-center">
             <Link href="/services" className="btn-lime text-lg px-10 py-4 inline-block">
               View All Services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Service — IT & Tech Support */}
+      <section className="bg-charles-darker py-24 border-t border-gray-800">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={staggerContainer}
+            className="text-center mb-14"
+          >
+            <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">Featured Service</motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">Need Tech Help?</motion.h2>
+            <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mx-auto mb-6"></motion.div>
+            <motion.p variants={fadeInUp} className="text-lg md:text-xl font-body text-gray-400 max-w-3xl mx-auto">
+              Beyond design and print, I also offer reliable IT & Tech Support — remote and on-site — for individuals and small businesses worldwide.
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-5xl mx-auto"
+          >
+            <Link
+              href="/services/it-support"
+              className="group block bg-charles-dark overflow-hidden border border-gray-800 hover:border-charles-lime transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-charles-lime/10"
+            >
+              <div className="grid md:grid-cols-2 items-stretch">
+                <div className="relative h-72 md:h-auto overflow-hidden">
+                  <Image
+                    src="/images/Finished-designs/tech.jpg"
+                    alt="IT & Tech Support"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-charles-dark via-charles-dark/40 to-transparent" />
+                </div>
+                <div className="p-8 md:p-12 flex flex-col justify-center">
+                  <div className="text-4xl mb-4">🛠️</div>
+                  <span className="text-charles-lime font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3 block">New · Available Worldwide</span>
+                  <h3 className="text-2xl md:text-3xl font-heading font-bold text-white mb-4 group-hover:text-charles-lime transition-colors">
+                    IT & Tech Support
+                  </h3>
+                  <p className="font-body text-gray-400 leading-relaxed mb-6">
+                    Computer troubleshooting, software setup, virus removal, Wi-Fi & network setup, data backup, and beginner cybersecurity — secure remote help for clients anywhere, on-site visits across Kampala.
+                  </p>
+                  <ul className="space-y-2 mb-8">
+                    {['Remote support via AnyDesk / TeamViewer', 'No fix, no fee guarantee', 'Friendly help in plain language'].map((item) => (
+                      <li key={item} className="flex items-start gap-2 font-body text-gray-300 text-sm">
+                        <span className="text-charles-lime mt-0.5">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <span className="inline-flex items-center gap-3 px-6 py-3 bg-charles-lime text-charles-dark font-heading font-bold uppercase tracking-wider w-fit group-hover:bg-charles-limeHover transition-colors">
+                    Explore IT Support
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Graphics Showreel — Our Work in Motion */}
+      <section className="bg-charles-dark py-28 border-t border-gray-800">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={staggerContainer}
+            className="text-center mb-16"
+          >
+            <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-4">Showreel</motion.p>
+            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">My Work in Motion</motion.h2>
+            <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mx-auto mb-6"></motion.div>
+            <motion.p variants={fadeInUp} className="text-lg md:text-xl font-body text-gray-400 max-w-3xl mx-auto">
+              A quick look at the graphics, brands, and clients I have had the privilege to design for — every piece crafted to communicate clearly and stand out.
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7 }}
+            className="max-w-5xl mx-auto"
+          >
+            <div className="relative aspect-video w-full overflow-hidden bg-black shadow-2xl shadow-charles-lime/10 border border-gray-800 rounded-lg">
+              <video
+                src="/images/Finished-designs/graphics-video.mp4"
+                className="absolute inset-0 w-full h-full object-contain"
+                controls
+                playsInline
+                preload="metadata"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p className="text-center font-body text-gray-500 text-sm italic mt-6">
+              Showreel of selected graphic design work and brands I have collaborated with.
+            </p>
+          </motion.div>
+
+          <div className="mt-12 text-center">
+            <Link href="/projects" className="btn-lime text-lg px-10 py-4 inline-block">
+              See the Full Portfolio
             </Link>
           </div>
         </div>

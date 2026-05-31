@@ -211,18 +211,18 @@ export default function ITSupportPage() {
       <section className="relative bg-charles-darker overflow-hidden border-b border-gray-800">
         <div className="absolute inset-0">
           <Image
-            src="/images/Finished-designs/keyboard.jpg"
+            src="/images/Finished-designs/tech.jpg"
             alt="IT & Tech Support"
             fill
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-charles-darker/95 via-charles-darker/70 to-charles-darker/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-charles-darker via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-charles-darker/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charles-darker via-transparent to-charles-darker/40" />
         </div>
-        <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 pt-56 pb-28">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-            <motion.nav variants={fadeInUp} className="flex items-center gap-2 text-gray-400 mb-8 font-body text-sm">
+        <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 pt-28 pb-12 md:pt-32 md:pb-16 text-center">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="flex flex-col items-center">
+            <motion.nav variants={fadeInUp} className="flex items-center justify-center gap-2 text-gray-400 mb-8 font-body text-sm">
               <Link href="/services" className="hover:text-charles-lime transition-colors">Services</Link>
               <span>›</span>
               <span className="text-charles-lime font-bold">IT & Tech Support</span>
@@ -230,14 +230,14 @@ export default function ITSupportPage() {
             <motion.p variants={fadeInUp} className="text-charles-lime font-heading font-bold text-sm uppercase tracking-[0.2em] mb-6">
               IT & Tech Support
             </motion.p>
-            <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl font-heading font-bold text-white mb-6 max-w-3xl leading-tight">
+            <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl font-heading font-bold text-white mb-6 max-w-3xl mx-auto leading-tight">
               Reliable tech support — <span className="text-charles-lime">remote, on-site, worldwide.</span>
             </motion.h1>
-            <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8" />
-            <motion.p variants={fadeInUp} className="text-xl font-body text-gray-300 max-w-3xl leading-relaxed">
+            <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mb-8 mx-auto" />
+            <motion.p variants={fadeInUp} className="text-xl font-body text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Any device, any issue, any time. Friendly IT help for individuals and small businesses — from quick fixes to ongoing monthly maintenance.
             </motion.p>
-            <motion.div variants={fadeInUp} className="mt-10 flex flex-wrap gap-4">
+            <motion.div variants={fadeInUp} className="mt-10 flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="px-8 py-4 bg-charles-lime text-charles-dark font-heading font-bold uppercase tracking-wider hover:bg-charles-limeHover transition-colors">
                 Get Help Now
               </Link>

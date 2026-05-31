@@ -12,11 +12,18 @@
   --accent: #bde51b;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  overscroll-behavior: none;
+  background-color: #1d1d1d;
+}
+
 body {
-  @apply bg-charles-dark text-white font-body leading-relaxed;
+  @apply bg-charles-darker text-white font-body leading-relaxed;
   scroll-behavior: smooth;
   margin: 0;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 a {

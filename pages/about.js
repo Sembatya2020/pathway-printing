@@ -17,7 +17,7 @@ export default function About() {
     <Layout title="About" description="Learn about Nija Print & Graphics Studio — Kampala's creative design and print experts.">
 
       {/* Hero */}
-      <section className="bg-charles-darker pt-48 pb-32 md:pt-64 md:pb-48 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
+      <section className="bg-charles-darker pt-28 pb-12 md:pt-32 md:pb-16 relative overflow-hidden border-b border-gray-800 flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <Image
             src="/images/Finished-designs/about-cover.jpg"

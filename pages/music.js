@@ -37,7 +37,7 @@ export default function MusicPage() {
       description="Professional songwriting and music production for NGOs, businesses, and personal stories. Turning stories into powerful songs."
     >
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden pt-36">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden pt-32 pb-28 md:pt-40 md:pb-32">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/Finished-designs/keyboard.jpg"
@@ -94,9 +94,22 @@ export default function MusicPage() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
-          <span className="text-white/30 text-xs uppercase tracking-widest">Scroll</span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-amber-500 to-transparent" />
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+          <div className="w-[1px] h-12 bg-gradient-to-b from-transparent to-amber-500 mb-1" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5 text-amber-500 -mt-1 animate-bounce"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+          <span className="text-amber-500 text-xs font-heading uppercase tracking-widest mt-1">Scroll</span>
         </div>
       </section>
 

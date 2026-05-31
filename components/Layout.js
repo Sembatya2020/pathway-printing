@@ -105,7 +105,7 @@ export default function Layout({ children, title, description }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </Head>
-      <div className="min-h-screen bg-charles-dark text-white overflow-x-hidden flex flex-col">
+      <div className="min-h-screen bg-charles-darker text-white overflow-x-hidden flex flex-col">
         <Header />
         <main>{children}</main>
         <Footer />

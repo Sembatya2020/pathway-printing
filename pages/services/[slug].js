@@ -52,8 +52,8 @@ const services = [
     ],
     process: ['Creative Brief', 'Concept Development', 'Design Drafts & Revisions', 'Final Artwork Delivery', 'Print-Ready Files'],
     relatedProjects: [
-      { title: 'Creative Studio Portfolio', image: '/images/Creative Graphic Designing Company in Scarborough.jpg' },
       { title: 'Aikido Event Poster', image: '/images/Finished-designs/Aikido.jpeg' },
+      { title: 'Photo Editing & Retouching', image: '/images/Finished-designs/photo-editing.jpg', description: 'Professional photo retouching, colour grading, and image manipulation — turning raw shots into polished visuals ready for print, web, and social media.' },
     ],
   },
   {
@@ -75,6 +75,7 @@ const services = [
     process: ['Brand Audit & Research', 'Strategy & Positioning', 'Concept Exploration', 'Design Refinement', 'Guidelines Delivery'],
     relatedProjects: [
       { title: 'Processwork Flyer', image: '/images/Finished-designs/Ivanlee-Designs2.jpg' },
+      { title: 'Brand Identity Showcase', image: '/images/Finished-designs/branding.jpeg', description: 'A complete brand identity exploration — logo, palette, and visual language designed to give an organisation a confident, consistent presence across every touchpoint.' },
     ],
   },
   {
@@ -117,8 +118,9 @@ const services = [
     ],
     process: ['File Review & Preparation', 'Material Selection', 'Proof Approval', 'Print Production', 'Quality Check & Delivery'],
     relatedProjects: [
-      { title: 'Exhibition Display Design', image: '/images/Pin by Nuno Eusebio on Atelier _ Graphic design inspiration poster, Company.jpg' },
       { title: 'Healing History Publication', image: '/images/Finished-designs/Healing-History-1.jpeg' },
+      { title: 'Custom T-Shirt Printing', image: '/images/Finished-designs/t-shirts.jpeg', description: 'Custom-printed t-shirts for events, teams, churches, and brands — durable inks, clean finishing, and crisp artwork that wears well wash after wash.' },
+      { title: 'ID Card Design & Print', image: '/images/Finished-designs/Id.jpeg', description: 'Professional ID card design and production for schools, organisations, and small businesses — clean layouts, sharp photos, and durable PVC finishing.' },
     ],
   },
 ];
@@ -150,7 +152,7 @@ export default function ServicePage({ service }) {
           <div className="absolute inset-0 bg-gradient-to-r from-charles-darker/95 via-charles-darker/60 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-charles-darker via-transparent to-transparent" />
         </div>
-        <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 pt-56 pb-28">
+        <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 pt-28 pb-12 md:pt-32 md:pb-16">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
             <motion.nav variants={fadeInUp} className="flex items-center gap-2 text-gray-400 mb-8 font-body text-sm">
               <Link href="/services" className="hover:text-charles-lime transition-colors">Services</Link>
@@ -286,6 +288,9 @@ export default function ServicePage({ service }) {
                   </div>
                   <div className="p-6">
                     <h3 className="font-heading font-bold text-xl text-white group-hover:text-charles-lime transition-colors">{proj.title}</h3>
+                    {proj.description && (
+                      <p className="font-body text-gray-400 text-sm leading-relaxed mt-3">{proj.description}</p>
+                    )}
                   </div>
                 </motion.div>
               ))}
