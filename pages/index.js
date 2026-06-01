@@ -43,6 +43,12 @@ const testimonials = [
     text: "We hired Ivan to be our graphic designer for our website and media design. We also hired Ivan to write inspirational songs for the Magarini Children's Centre in Kenya. We invited him to Kenya to teach the children the songs. This was a life changing experience for everyone at the center.",
     author: "Sage Emery",
     role: "Founder of International Peace Group"
+  },
+  {
+    text: "Working with Ivan from Nija Graphic Studio has been a fantastic experience. He's been incredibly responsive to my needs as a professional developing my website. He listens closely to the style I want and has a deep understanding of client needs. Ivan is also skilled in both graphics and web communication, and he produced a beautiful website for my practice.",
+    author: "Mark O'Connell",
+    role: "Process-Oriented Psychotherapist, Facilitator & Teacher of Processwork — Devon, United Kingdom",
+    website: "https://popmoc.com/"
   }
 ];
 
@@ -655,6 +661,16 @@ export default function Home() {
               <div>
                 <div className="font-heading font-bold text-white text-xl mb-1">{testimonials[currentTestimonial].author}</div>
                 <div className="text-charles-lime font-bold uppercase tracking-wider text-xs">{testimonials[currentTestimonial].role}</div>
+                {testimonials[currentTestimonial].website && (
+                  <a
+                    href={testimonials[currentTestimonial].website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 text-charles-lime hover:text-white transition-colors text-sm font-body underline underline-offset-4"
+                  >
+                    Visit website →
+                  </a>
+                )}
               </div>
             </div>
           </div>
