@@ -15,7 +15,7 @@ const stagger = {
 const services = [
   { slug: 'web-design', title: 'Web Design', description: 'Responsive, modern websites from simple sites to e-commerce platforms that communicate your message clearly online.', image: '/images/Finished-designs/webdesign.jpg', icon: '💻' },
   { slug: 'graphic-design', title: 'Graphic Design', description: 'Flyers, posters, social media designs, and print materials that are clear, effective, and visually strong.', image: '/images/Finished-designs/graphic.jpg', icon: '🎨' },
-  { slug: 'it-support', title: 'IT & Tech Support', description: 'Remote and on-site IT support — computer troubleshooting, software setup, virus removal, network setup, and small-business IT maintenance.', image: '/images/Finished-designs/keyboard.jpg', icon: '🛠️' },
+  { slug: 'it-support', title: 'IT & Tech Support', description: 'Remote IT support — computer troubleshooting, Windows & Office installation, account recovery, data backup, and Google Workspace / Microsoft 365 setup.', image: '/images/Finished-designs/keyboard.jpg', icon: '🛠️' },
   { slug: 'music', title: 'Music', description: 'Songwriting, collaboration, and custom music for events, creative projects, and meaningful storytelling.', image: '/images/Finished-designs/music.jpg', icon: '🎵', isPage: true },
 
 ];
@@ -164,7 +164,7 @@ export default function Services() {
                 <li className="flex justify-between"><span>PC Cleanup & Tune-Up</span><span className="text-charles-lime font-bold">$10 – $30</span></li>
                 <li className="flex justify-between"><span>Windows Installation</span><span className="text-charles-lime font-bold">$15 – $50</span></li>
                 <li className="flex justify-between"><span>Remote Troubleshooting</span><span className="text-charles-lime font-bold">$10 – $25 / hr</span></li>
-                <li className="flex justify-between"><span>Virus & Malware Removal</span><span className="text-charles-lime font-bold">From $20</span></li>
+                <li className="flex justify-between"><span>Microsoft Office Setup</span><span className="text-charles-lime font-bold">From $20</span></li>
               </ul>
             </motion.div>
 
@@ -174,7 +174,7 @@ export default function Services() {
               <h3 className="text-xl font-heading font-bold text-white mb-4">Business IT Support</h3>
               <ul className="space-y-3 font-body text-gray-400 text-sm">
                 <li className="flex justify-between"><span>Monthly Support Package</span><span className="text-charles-lime font-bold">$50 – $300 / mo</span></li>
-                <li className="flex justify-between"><span>Network & Wi-Fi Setup</span><span className="text-charles-lime font-bold">From $40</span></li>
+                <li className="flex justify-between"><span>Wi-Fi Connectivity Help</span><span className="text-charles-lime font-bold">From $20</span></li>
                 <li className="flex justify-between"><span>Data Backup & Recovery</span><span className="text-charles-lime font-bold">From $25</span></li>
                 <li className="flex justify-between"><span>Google Workspace / M365</span><span className="text-charles-lime font-bold">From $30</span></li>
               </ul>

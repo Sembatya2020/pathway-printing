@@ -42,8 +42,10 @@ export default function Layout({ children, title, description }) {
           "Process Work",
           "Information Technology Support",
           "Remote Computer Troubleshooting",
-          "Network Setup",
-          "Cybersecurity Basics"
+          "Windows & Microsoft Office Installation",
+          "Google Workspace & Microsoft 365 Setup",
+          "Data Backup & File Recovery",
+          "Domain & Hosting Setup"
         ]
       },
       {
@@ -88,12 +90,15 @@ export default function Layout({ children, title, description }) {
           "Music Production",
           "Remote IT Support",
           "Computer Troubleshooting",
-          "Software Installation & Setup",
-          "Virus & Malware Removal",
-          "Network Setup",
-          "Data Backup & Recovery",
-          "Google Workspace & Microsoft 365 Support",
-          "Beginner Cybersecurity Audits"
+          "Windows Installation & Reinstall",
+          "Microsoft Office Setup",
+          "Printer & Scanner Setup",
+          "Wi-Fi & Internet Connectivity Help",
+          "Locked or Hacked Account Recovery",
+          "Data Backup & File Recovery",
+          "Google Workspace & Microsoft 365 Setup",
+          "Cloud Storage Configuration",
+          "Domain & Hosting Setup"
         ]
       }
     ]

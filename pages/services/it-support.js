@@ -16,26 +16,18 @@ const stagger = {
 const capabilities = [
   'Slow or freezing computers',
   'Startup and boot problems',
-  'Software errors & crashes',
   'Driver and hardware issues',
   'Blue screen / system errors',
-  'Wi-Fi & internet connectivity',
-  'Virus and malware infections',
-  'Windows installation & reinstall',
-  'Microsoft Office setup',
   'Printer and scanner setup',
-  'Zoom / Teams / Slack setup',
-  'Email account configuration',
+  'Windows installation & reinstall',
   'Locked or hacked account recovery',
-  'Two-factor authentication setup',
-  'Router & home network setup',
   'Data backup & file recovery',
-  'WordPress website setup',
-  'Domain and hosting setup',
   'Google Workspace / Microsoft 365',
   'Cloud storage configuration',
-  'Antivirus & firewall setup',
-  'Password & security audits',
+  'Domain and hosting setup',
+  'Microsoft Office setup',
+  'Software errors & crashes',
+  'Wi-Fi & internet connectivity',
 ];
 
 const supportOptions = [
@@ -67,12 +59,12 @@ const plans = [
     badge: null,
     price: '$10 – $50',
     period: 'per issue',
-    description: 'Pay only for what you need. Perfect for a single computer problem, virus cleanup, or fresh Windows installation.',
+    description: 'Pay only for what you need. Perfect for a single computer problem, a fresh Windows installation, or one specific setup task.',
     features: [
       'PC cleanup & tune-up',
       'Single software install',
-      'Virus & malware removal',
-      'Email or account recovery',
+      'Windows installation & reinstall',
+      'Locked account recovery',
       '7-day follow-up included',
     ],
   },
@@ -85,7 +77,7 @@ const plans = [
     features: [
       'Live remote troubleshooting',
       'Software setup & configuration',
-      'Account & security setup',
+      'Cloud & Microsoft 365 setup',
       'Performance optimisation',
       'Worldwide availability',
     ],
@@ -98,7 +90,7 @@ const plans = [
     description: 'Ongoing IT care for small businesses. Predictable cost, priority response, and proactive maintenance.',
     features: [
       'Scheduled maintenance',
-      'Software & security updates',
+      'Software updates',
       'Backup management',
       'Priority response',
       'Monthly health report',
@@ -109,46 +101,35 @@ const plans = [
 const categories = [
   {
     icon: '🛠️',
-    title: 'Remote IT Support',
-    intro: 'Offered to clients worldwide — wherever you are, help is one session away.',
+    title: 'Computer Troubleshooting',
+    intro: 'The everyday computer issues that slow you down — fixed remotely, wherever you are.',
     items: [
-      'Computer troubleshooting (slow PCs, startup, drivers, blue screens, internet)',
-      'Software installation & setup (Windows, Office, antivirus, printers, Zoom, Teams, Slack)',
-      'Virus & malware removal — scanning, cleanup, optimisation, security hardening',
-      'Email & account setup — business email, Outlook/Gmail, account recovery, 2FA',
+      'Slow or freezing computers, startup and boot problems',
+      'Driver and hardware issues, blue screen / system errors',
+      'Software errors & crashes, Wi-Fi & internet connectivity',
+      'Printer and scanner setup',
     ],
   },
   {
-    icon: '🏢',
-    title: 'Business IT Support',
-    intro: 'Practical IT services for offices, schools, and small businesses in Kampala and beyond.',
+    icon: '💿',
+    title: 'Software & Account Setup',
+    intro: 'Get your computer set up properly so it works the way you need it to.',
     items: [
-      'Network setup — Wi-Fi, router configuration, LAN cabling, troubleshooting',
-      'IT maintenance contracts — monthly support packages with updates, backups, security',
-      'Data backup & recovery — Acronis True Image, Google Drive, OneDrive setups',
-      'User onboarding and account management',
+      'Windows installation & reinstall',
+      'Microsoft Office setup',
+      'Locked or hacked account recovery',
+      'Data backup & file recovery',
     ],
   },
   {
     icon: '🌐',
-    title: 'Website & Tech Setup',
-    intro: 'Get your business online with a clean website and properly configured cloud tools.',
+    title: 'Cloud & Online Setup',
+    intro: 'Move your work online with properly configured cloud tools and hosting.',
     items: [
-      'WordPress installation & basic site maintenance',
-      'Domain & hosting setup',
-      'Business email integration',
-      'Google Workspace & Microsoft 365 — accounts, email, cloud storage, security',
-    ],
-  },
-  {
-    icon: '🛡️',
-    title: 'Cybersecurity (Beginner)',
-    intro: 'A solid security baseline — ideal for individuals, families, and small offices.',
-    items: [
-      'Security audits — weak passwords, outdated software, open ports, common vulnerabilities',
-      'Endpoint protection setup — antivirus, firewall, device security policies',
-      'Two-factor authentication for all critical accounts',
-      'Phishing & safe-browsing basics for your team',
+      'Google Workspace / Microsoft 365 accounts',
+      'Cloud storage configuration (Google Drive, OneDrive)',
+      'Domain and hosting setup',
+      'Microsoft 365 onboarding for small teams',
     ],
   },
 ];
@@ -204,7 +185,7 @@ export default function ITSupportPage() {
   return (
     <Layout
       title="IT & Tech Support"
-      description="Remote and on-site IT support — computer troubleshooting, software setup, network setup, virus removal, data backup, and beginner cybersecurity. Available worldwide."
+      description="Remote and on-site IT support — computer troubleshooting, Windows & Office installation, account recovery, data backup, cloud and hosting setup. Available worldwide."
     >
 
       {/* Hero */}
@@ -420,7 +401,7 @@ export default function ITSupportPage() {
               Full Service Breakdown
             </motion.p>
             <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-heading font-bold text-white mb-6">
-              Four areas of expertise
+              Three areas of expertise
             </motion.h2>
             <motion.div variants={fadeInUp} className="w-[125px] h-[1px] bg-charles-lime mx-auto" />
           </motion.div>
@@ -430,7 +411,7 @@ export default function ITSupportPage() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.05 }}
             variants={stagger}
-            className="grid gap-6 md:grid-cols-2"
+            className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
           >
             {categories.map((cat) => (
               <motion.div key={cat.title} variants={fadeInUp} className="bg-charles-dark p-8 border-t-2 border-charles-lime flex flex-col">

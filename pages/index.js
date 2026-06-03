@@ -394,7 +394,7 @@ export default function Home() {
                     IT & Tech Support
                   </h3>
                   <p className="font-body text-gray-400 leading-relaxed mb-6">
-                    Computer troubleshooting, software setup, virus removal, Wi-Fi & network setup, data backup, and beginner cybersecurity — secure remote help for clients anywhere, on-site visits across Kampala.
+                    Computer troubleshooting, Windows & Office installation, account recovery, data backup & file recovery, Google Workspace / Microsoft 365 and hosting setup — secure remote help for clients anywhere, on-site visits across Kampala.
                   </p>
                   <ul className="space-y-2 mb-8">
                     {['Remote support via AnyDesk / TeamViewer', 'No fix, no fee guarantee', 'Friendly help in plain language'].map((item) => (
