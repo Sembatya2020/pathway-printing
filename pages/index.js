@@ -443,6 +443,7 @@ export default function Home() {
             <div className="relative aspect-video w-full overflow-hidden bg-black shadow-2xl shadow-charles-lime/10 border border-gray-800 rounded-lg">
               <video
                 src="/images/Finished-designs/graphics-video.mp4"
+                poster="/images/video-poster.jpg"
                 className="absolute inset-0 w-full h-full object-contain"
                 controls
                 playsInline
