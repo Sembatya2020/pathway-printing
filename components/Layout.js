@@ -68,7 +68,18 @@ export default function Layout({ children, title, description }) {
         "telephone": "+256782807255",
         "priceRange": "$$",
         "currenciesAccepted": "UGX, USD",
-        "foundingDate": "2020",
+        "foundingDate": "2026-05-12",
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Kampala, Uganda"
+        },
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "name": "URSB Registration Number",
+            "value": "80034317569617"
+          }
+        ],
         "contactPoint": [
           {
             "@type": "ContactPoint",
