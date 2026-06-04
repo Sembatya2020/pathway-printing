@@ -10,7 +10,7 @@ export default function Layout({ children, title, description }) {
 
   const formattedTitle = title
     ? (title.includes('Nija') ? title : `${title} | Nija Print & Graphics Studio`)
-    : 'Nija Print & Graphics Studio | Remote Graphic Design, Branding & Print — Worldwide';
+    : 'Nija Print & Graphics Studio — Global Design & Branding';
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -58,7 +58,7 @@ export default function Layout({ children, title, description }) {
         "description": "Creative design, high-quality commercial printing, and custom music production services based in Kampala, Uganda, serving clients locally and worldwide. Officially registered as Nija Print & Graphics Studio Uganda Limited.",
         "url": "https://nija-graphicsstudio.com/",
         "logo": "https://nija-graphicsstudio.com/images/Finished-designs/logo.png",
-        "image": "https://nija-graphicsstudio.com/images/Finished-designs/printingb.jpg",
+        "image": "https://nija-graphicsstudio.com/images/og-cover.jpg",
         "email": "mailto:info@nija-graphicsstudio.com",
         "telephone": "+256782807255",
         "priceRange": "$$",
@@ -127,9 +127,12 @@ export default function Layout({ children, title, description }) {
         <meta property="og:title" content={formattedTitle} />
         <meta property="og:description" content={description || 'Remote graphic design, branding, web design, print, IT support, and music production for businesses worldwide — based in Kampala, Uganda.'} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content="https://nija-graphicsstudio.com/images/Finished-designs/printingb.jpg" />
+        <meta property="og:image" content="https://nija-graphicsstudio.com/images/og-cover.jpg" />
+        <meta property="og:image:secure_url" content="https://nija-graphicsstudio.com/images/og-cover.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Nija Print & Graphics Studio — global remote design and branding" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:locale:alternate" content="en_GB" />
         <meta property="og:locale:alternate" content="en_UG" />
@@ -140,7 +143,7 @@ export default function Layout({ children, title, description }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={formattedTitle} />
         <meta name="twitter:description" content={description || 'Remote graphic design, branding, web design, print, IT support, and music production for businesses worldwide — based in Kampala, Uganda.'} />
-        <meta name="twitter:image" content="https://nija-graphicsstudio.com/images/Finished-designs/printingb.jpg" />
+        <meta name="twitter:image" content="https://nija-graphicsstudio.com/images/og-cover.jpg" />
 
         <script
           type="application/ld+json"
