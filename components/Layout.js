@@ -10,7 +10,7 @@ export default function Layout({ children, title, description }) {
 
   const formattedTitle = title
     ? (title.includes('Nija') ? title : `${title} | Nija Print & Graphics Studio`)
-    : 'Nija Print & Graphics Studio | Kampala Design & Print';
+    : 'Nija Print & Graphics Studio | Remote Graphic Design, Branding & Print — Worldwide';
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -20,7 +20,8 @@ export default function Layout({ children, title, description }) {
         "@id": "https://nija-graphicsstudio.com/#website",
         "url": "https://nija-graphicsstudio.com/",
         "name": "Nija Print & Graphics Studio",
-        "description": "Professional graphic design, branding, printing, and music production solutions in Kampala, Uganda.",
+        "description": "Remote-first graphic design, branding, printing, IT support, and music production for clients worldwide — headquartered in Kampala, Uganda.",
+        "inLanguage": "en",
         "publisher": {
           "@id": "https://nija-graphicsstudio.com/#founder"
         }
@@ -108,12 +109,14 @@ export default function Layout({ children, title, description }) {
     <>
       <Head>
         <title>{formattedTitle}</title>
-        <meta name="description" content={description || 'Professional graphic design, branding, printing, IT support, and music production services in Kampala, Uganda. Officially registered as Nija Print & Graphics Studio Uganda Limited.'} />
+        <meta name="description" content={description || 'Remote graphic design, branding, web design, print, IT support, and music production for businesses worldwide. Headquartered in Kampala, Uganda — delivering high-quality visual identities and digital assets to clients globally.'} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1d1d1d" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Ivan Sembatya — Nija Print & Graphics Studio Uganda Limited" />
-        <meta name="keywords" content="graphic design Kampala, printing Uganda, web design Kampala, IT support Kampala, branding Uganda, Nija Print, Nija Graphics, Nija Print & Graphics Studio Uganda Limited" />
+        <meta name="keywords" content="remote graphic designer, worldwide branding agency, international graphic design studio, remote web design, global brand identity, digital design studio, international print services, remote IT support, online graphic design Africa, graphic design Kampala, printing Uganda, web design Kampala, IT support Kampala, branding Uganda, Nija Print, Nija Graphics, Nija Print & Graphics Studio Uganda Limited" />
+        <meta name="geo.region" content="UG" />
+        <meta name="geo.placename" content="Kampala" />
         <link rel="icon" type="image/png" href="/images/Finished-designs/logo.png" />
         <link rel="apple-touch-icon" href="/images/Finished-designs/logo.png" />
         <link rel="canonical" href={canonicalUrl} />
@@ -122,17 +125,21 @@ export default function Layout({ children, title, description }) {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Nija Print & Graphics Studio" />
         <meta property="og:title" content={formattedTitle} />
-        <meta property="og:description" content={description || 'Professional graphic design, branding, printing, IT support, and music production services in Kampala, Uganda.'} />
+        <meta property="og:description" content={description || 'Remote graphic design, branding, web design, print, IT support, and music production for businesses worldwide — based in Kampala, Uganda.'} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:image" content="https://nija-graphicsstudio.com/images/Finished-designs/printingb.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:locale" content="en_UG" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_UG" />
+        <link rel="alternate" hrefLang="en" href={canonicalUrl} />
+        <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={formattedTitle} />
-        <meta name="twitter:description" content={description || 'Professional graphic design, branding, printing, IT support, and music production services in Kampala, Uganda.'} />
+        <meta name="twitter:description" content={description || 'Remote graphic design, branding, web design, print, IT support, and music production for businesses worldwide — based in Kampala, Uganda.'} />
         <meta name="twitter:image" content="https://nija-graphicsstudio.com/images/Finished-designs/printingb.jpg" />
 
         <script
