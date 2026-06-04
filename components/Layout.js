@@ -57,12 +57,35 @@ export default function Layout({ children, title, description }) {
         "alternateName": "Nija Print & Graphics Studio Uganda Ltd",
         "description": "Creative design, high-quality commercial printing, and custom music production services based in Kampala, Uganda, serving clients locally and worldwide. Officially registered as Nija Print & Graphics Studio Uganda Limited.",
         "url": "https://nija-graphicsstudio.com/",
-        "logo": "https://nija-graphicsstudio.com/images/Finished-designs/logo.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nija-graphicsstudio.com/images/Finished-designs/logo.png",
+          "width": 3508,
+          "height": 2481
+        },
         "image": "https://nija-graphicsstudio.com/images/og-cover.jpg",
         "email": "mailto:info@nija-graphicsstudio.com",
         "telephone": "+256782807255",
         "priceRange": "$$",
         "currenciesAccepted": "UGX, USD",
+        "foundingDate": "2020",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+256782807255",
+            "email": "info@nija-graphicsstudio.com",
+            "contactType": "customer service",
+            "areaServed": "Worldwide",
+            "availableLanguage": ["en"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+256755960836",
+            "contactType": "sales",
+            "areaServed": "Worldwide",
+            "availableLanguage": ["en"]
+          }
+        ],
         "sameAs": [
           "https://www.facebook.com/profile.php?id=61588577943873",
           "https://www.linkedin.com/in/ivan-sembatya-4b41b823b"
