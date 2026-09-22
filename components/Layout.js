@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
+import ReachForm from './ReachForm';
 import { useRouter } from 'next/router';
 
 export default function Layout({ children, title, description }) {
@@ -187,6 +188,7 @@ export default function Layout({ children, title, description }) {
       <div className="min-h-screen bg-charles-darker text-white overflow-x-hidden flex flex-col">
         <Header />
         <main>{children}</main>
+        <ReachForm />
         <Footer />
       </div>
     </>
